@@ -10,6 +10,7 @@ import requests
 CREATE TABLE mahasiswa (
   id INT(6) AUTO_INCREMENT PRIMARY KEY,
   nama VARCHAR(30) NOT NULL,
+  kode_jurusan VARCHAR(10) NOT NULL,
   nim VARCHAR(10) NOT NULL,
   email VARCHAR(5)
 )
