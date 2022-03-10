@@ -1,4 +1,4 @@
-# Ide Solusi: Sistem Terintegrasi Tracking, Assessment, Pelatihan, dan Penyaluran Tenaga Kerja
+# Ide Solusi: Sistem Terintegrasi Tracking, Asesmen, Pelatihan, dan Penyaluran Tenaga Kerja
 
 ## Deskripsi
 Aplikasi ini berupaya untuk menanggulangi permasalahan pengangguran. Apliasi ini memiliki fitur2 utama seperti: 
@@ -9,13 +9,21 @@ Aplikasi ini berupaya untuk menanggulangi permasalahan pengangguran. Apliasi ini
 
 ## Entitas dan Atribut
 
-### Calon Peserta
-
-
 ### Peserta
+- ID
+- NIK
+- Nama
+- Alamat
+- Tempat lahir
+- Tahun lahir
+- Kontak
+- Waktu 
 
 
 ### Asesmen
+- ID
+- ID Peserta
+- Waktu pelaksanaan
 
 
 ### Pelatihan
