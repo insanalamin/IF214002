@@ -1,9 +1,30 @@
-<mxfile host="app.diagrams.net" modified="2022-03-10T23:50:40.164Z" agent="5.0 (X11)" etag="aLa9ZtmJK53upDnf0_yf" version="16.6.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-10T23:54:13.815Z" agent="5.0 (X11)" etag="EA-tTDuDR9wcrzPPE3jr" version="16.6.5" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
     <mxGraphModel dx="1422" dy="723" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="6i0Xa6GEliDMpJBAegYM-1" value="Driver" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="140" y="140" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6i0Xa6GEliDMpJBAegYM-2" value="User" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="560" y="140" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6i0Xa6GEliDMpJBAegYM-5" value="Order" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="350" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6i0Xa6GEliDMpJBAegYM-6" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERone;endFill=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="6i0Xa6GEliDMpJBAegYM-5" target="6i0Xa6GEliDMpJBAegYM-2">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="370" y="430" as="sourcePoint" />
+            <mxPoint x="470" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6i0Xa6GEliDMpJBAegYM-7" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERone;endFill=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="6i0Xa6GEliDMpJBAegYM-5" target="6i0Xa6GEliDMpJBAegYM-1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="370" y="430" as="sourcePoint" />
+            <mxPoint x="470" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
