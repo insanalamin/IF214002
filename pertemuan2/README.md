@@ -17,15 +17,44 @@ Aplikasi ini berupaya untuk menanggulangi permasalahan pengangguran. Apliasi ini
 - Tempat lahir
 - Tahun lahir
 - Kontak
-- Waktu 
-
+- Waktu pendaftaran
 
 ### Asesmen
 - ID
 - ID Peserta
 - Waktu pelaksanaan
-
+- Pengalaman kerja
+- Keterampilan yang dimiliki
+- Skor motivasi kerja
+- Skor keinginan mengembangkan diri
+- Skor psikotes
+- Status kelulusan
+- Tanggal kelulusan
 
 ### Pelatihan
+- ID
+- ID Peserta
+- Jenis pelatihan
+- Bidang pekerjaan
 
+### Pelaksanaan Pelatihan
+- ID 
+- ID pelatihan
+- Pertemuan ke
+- Waktu pelaksanaan
+- Kehadiran
+- Skor pelatihan
 
+### Mitra Perusahaan
+- ID
+- Nama perusahaan
+- Bidang pekerjaan
+- Alamat
+- Nama penanggung jawab
+- Nomor kontak
+
+### Penyaluran
+- ID
+- ID perusahaan
+- ID peserta
+- Status penyaluran
