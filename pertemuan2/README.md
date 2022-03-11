@@ -1,5 +1,7 @@
 # Ide Solusi: Sistem Terintegrasi Tracking, Asesmen, Pelatihan, dan Penyaluran Tenaga Kerja
 
+![UIN](https://i0.wp.com/uinsgd.ac.id/wp-content/uploads/2020/01/Gedung-Rektorat.jpg?fit=1303%2C590&ssl=1)
+
 ## Deskripsi
 Aplikasi ini berupaya untuk menanggulangi permasalahan pengangguran. Apliasi ini memiliki fitur2 utama seperti: 
 - Tracking penduduk usia kerja yang tidak memiliki pekerjaan
