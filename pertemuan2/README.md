@@ -62,4 +62,5 @@ Aplikasi ini berupaya untuk menanggulangi permasalahan pengangguran. Apliasi ini
 - Status penyaluran
 
 ## Relationship
-- Peserta 1 1 - 0 N Asesmen
+- Peserta 1 1 - 0 1 Asesmen
+- Peserta N 1 - 0 N Pelatihan
