@@ -10,6 +10,9 @@
 - [![](https://img.youtube.com/vi/-CuY5ADwn24/3.jpg) Entity Relationship Diagram (ERD) Tutorial - Part 2 - Lucidchart](https://www.youtube.com/watch?v=-CuY5ADwn24)
 - [![](https://img.youtube.com/vi/s9-H-adeA-I/3.jpg) Kusrini - DBMS - 2 - Entity Relationship Diagram (Bahasa Indonesia)](https://www.youtube.com/watch?v=s9-H-adeA-I)
 
+## Events
+
+
 ## Repositori Peserta Kelas E
 - [Nenti Nurnaningsih](https://github.com/nentinur/IF214002)
 - [Normalika Shandi](https://github.com/NormalikaShandi/IF214002-NEW)
