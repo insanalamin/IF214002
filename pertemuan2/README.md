@@ -12,7 +12,7 @@ Aplikasi ini berupaya untuk menanggulangi permasalahan pengangguran. Apliasi ini
 ## Entitas dan Atribut
 
 ### Peserta
-- ID
+- \* ID
 - NIK
 - Nama
 - Alamat
@@ -22,7 +22,7 @@ Aplikasi ini berupaya untuk menanggulangi permasalahan pengangguran. Apliasi ini
 - Waktu pendaftaran
 
 ### Asesmen
-- ID
+- \* ID
 - ID Peserta
 - Waktu pelaksanaan
 - Pengalaman kerja
@@ -34,13 +34,13 @@ Aplikasi ini berupaya untuk menanggulangi permasalahan pengangguran. Apliasi ini
 - Tanggal kelulusan
 
 ### Pelatihan
-- ID
+- \* ID
 - ID Peserta
 - Jenis pelatihan
 - Bidang pekerjaan
 
 ### Pelaksanaan Pelatihan
-- ID 
+- \* ID 
 - ID pelatihan
 - Pertemuan ke
 - Waktu pelaksanaan
@@ -48,7 +48,7 @@ Aplikasi ini berupaya untuk menanggulangi permasalahan pengangguran. Apliasi ini
 - Skor pelatihan
 
 ### Mitra Perusahaan
-- ID
+- \* ID
 - Nama perusahaan
 - Bidang pekerjaan
 - Alamat
@@ -56,7 +56,10 @@ Aplikasi ini berupaya untuk menanggulangi permasalahan pengangguran. Apliasi ini
 - Nomor kontak
 
 ### Penyaluran
-- ID
+- \* ID
 - ID perusahaan
 - ID peserta
 - Status penyaluran
+
+## Relationship
+- Peserta 1 1 - 0 N Asesmen
