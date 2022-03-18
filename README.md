@@ -9,9 +9,19 @@
 - [![](https://img.youtube.com/vi/QpdhBUYk7Kk/2.jpg) Entity Relationship Diagram (ERD) Tutorial - Part 1 - Lucidchart](https://www.youtube.com/watch?v=QpdhBUYk7Kk)
 - [![](https://img.youtube.com/vi/-CuY5ADwn24/3.jpg) Entity Relationship Diagram (ERD) Tutorial - Part 2 - Lucidchart](https://www.youtube.com/watch?v=-CuY5ADwn24)
 - [![](https://img.youtube.com/vi/s9-H-adeA-I/3.jpg) Kusrini - DBMS - 2 - Entity Relationship Diagram (Bahasa Indonesia)](https://www.youtube.com/watch?v=s9-H-adeA-I)
+- [What is Normalization in DBMS (SQL)? 1NF, 2NF, 3NF, BCNF Database with Example](https://www.guru99.com/database-normalization.html)
+
 
 ## Events
 
+
+|                                                                     |P3   |   |   |   |
+|---                                                                  |---  |---|---|---|
+|[Nenti Nurnaningsih](https://github.com/nentinur/IF214002)           |     |   |   |   |
+|[Normalika Shandi](https://github.com/NormalikaShandi/IF214002-NEW)  |     |   |   |   |
+|[Rijki](https://github.com/rizky-iki/IF214002)                       |L0.5 |   |   |   |
+|[Nurrohman](https://github.com/Nurrohman10/IF214002)                 |L0.7 |   |   |   |
+|[Raihan](https://github.com/Rhnnrsdq/IF214002)                       |L0.7 |   |   |   |
 
 ## Repositori Peserta Kelas E
 - [Nenti Nurnaningsih](https://github.com/nentinur/IF214002)
