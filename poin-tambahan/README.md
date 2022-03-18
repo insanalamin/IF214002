@@ -1,5 +1,8 @@
 ## Event : The Role of Data Scientist @ Tokopedia
 
+### Detail kegiatan
+- 22 Maret 2022
+
 ![Screenshot]()
 
 ### Pointer
