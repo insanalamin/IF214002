@@ -14,14 +14,14 @@
 
 ## Events
 
-
-|                                                                     |P3   |   |   |   |
-|---                                                                  |---  |---|---|---|
-|[Nenti Nurnaningsih](https://github.com/nentinur/IF214002)           |     |   |   |   |
-|[Normalika Shandi](https://github.com/NormalikaShandi/IF214002-NEW)  |     |   |   |   |
-|[Rijki](https://github.com/rizky-iki/IF214002)                       |L0.5 |   |   |   |
-|[Nurrohman](https://github.com/Nurrohman10/IF214002)                 |L0.7 |   |   |   |
-|[Raihan](https://github.com/Rhnnrsdq/IF214002)                       |L0.7 |   |   |   |
+|                                                                     |P3   |P4   |   |   |
+|---                                                                  |---  |---  |---|---|
+|[Nenti Nurnaningsih](https://github.com/nentinur/IF214002)           |     |     |   |   |
+|[Normalika Shandi](https://github.com/NormalikaShandi/IF214002-NEW)  |     |     |   |   |
+|[Rijki](https://github.com/rizky-iki/IF214002)                       |L0.5 |     |   |   |
+|[Nurrohman](https://github.com/Nurrohman10/IF214002)                 |L0.7 |     |   |   |
+|[Raihan](https://github.com/Rhnnrsdq/IF214002)                       |L0.7 |     |   |   |
+|[Rama Bagadhara](https://github.com/ramabhagadhara/IF214002)         |     |L0.7 |   |   |
 
 ## Repositori Peserta Kelas E
 - [Nenti Nurnaningsih](https://github.com/nentinur/IF214002)
