@@ -20,3 +20,26 @@
 - Antara Pembeli - Barang ga ada relationship
 - Atribut buat transaksi dilengkapi
 - Atribut barang ditambahi
+
+## Nur Kholis Majid
+- Jelaskan deskripsi nya
+- Jelaskan fitur2nya apa
+  - Baca buku online pake membership
+  - Bookmark buku yang dibaca
+- Ada penghubung antara Buku dan Pengguna
+- Entitas
+  - Pengguna
+    - ID
+    - Nama
+    - dsb.
+  - Buku
+    - ID
+    - Judul
+    - dsb.
+  - Baca
+    - ID Buku
+    - ID Pengguna
+    - Waktu
+  - Favorit
+    - ID Buku
+    - ID Pengguna
