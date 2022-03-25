@@ -43,3 +43,16 @@
   - Favorit
     - ID Buku
     - ID Pengguna
+
+## Nugraha Adi Sulistyo
+- Tambah entitas wilayah
+  - kode keluarahan / desa
+  - rw
+  - rt
+- Jadiin hirarki cukup 1 entitas Warga
+  - role
+- Role (1 = warga, 2 = seksi olahraga, 3 = , 9 = ketua rt) 
+  - id
+  - id_role_parent
+  - role
+- Keluhan dan Berita, mau dipisah apa digabung, tergantung kompleksitasnya
