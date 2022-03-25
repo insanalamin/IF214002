@@ -56,3 +56,23 @@
   - id_role_parent
   - role
 - Keluhan dan Berita, mau dipisah apa digabung, tergantung kompleksitasnya
+
+## Nurrohman
+- Menyimpan hasil pemeriksaan lab
+- Mengirimkan Hasil Lab
+- Mengunduh dan Mengunggah Hasil Lab
+  - Pasien
+  - Laboratorium
+  - Admin lab
+  - 1 Admin lab, bisa banyak pasien
+  - 1 Pasien, bisa banyak admin lab
+  - Admin lab - Pasien M:M
+  - Pemeriksaan
+    - ID Pasien
+    - ID Lab
+    - ID Admin lab
+    - Waktu
+    - Kategori
+    - Hasil
+    - Status pengiriman hasil
+    - Waktu pengiriman hasil
