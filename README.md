@@ -38,3 +38,5 @@
 |[Nurrohman](https://github.com/Nurrohman10/IF214002)                 |L0.7 |     |                   |   |
 |[Raihan](https://github.com/Rhnnrsdq/IF214002)                       |L0.7 |     |                   |   |
 |[Rama Bagadhara](https://github.com/ramabhagadhara/IF214002)         |     |L0.7 |                   |   |
+|[Rizki Aryandi](https://github.com/rizkiaryandi/IF214002)         |     |L0.7 |                   |   |
+
