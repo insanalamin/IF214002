@@ -4,3 +4,4 @@
 - [Reduction of ER diagram to Table](https://www.javatpoint.com/dbms-reduction-of-er-diagram-into-table)
 - [SQLiteOnline](https://sqliteonline.com/)
 - [MariaDB](https://www.tutorialspoint.com/mariadb/mariadb_create_tables.htm)
+- [Query bisa ngapain aja ?](https://www.geeksforgeeks.org/sql-ddl-dql-dml-dcl-tcl-commands/)
