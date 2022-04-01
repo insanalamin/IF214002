@@ -7,3 +7,6 @@
 - [Query bisa ngapain aja ?](https://www.geeksforgeeks.org/sql-ddl-dql-dml-dcl-tcl-commands/)
 - [Tipe data](https://www.w3schools.com/sql/sql_datatypes.asp)
 - [Reserved words](https://doc.ispirer.com/sqlways/Output/SQLWays-1-205.html)
+- [Instalasi WSL 2 dan Docker di Windows](https://docs.docker.com/desktop/windows/install/)
+
+## Komentar
