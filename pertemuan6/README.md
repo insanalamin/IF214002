@@ -17,10 +17,13 @@
   - Mau tau alasan sebenarnya mengapa ada normalisasi di basis data relasional ? telusuri sejarahnya
 
 #### Mengapa normalisasi basis data ?
-- Dengan memperlakukan 1 cell hanya boleh 0 - 1 data:
+- NF1 - Dengan memperlakukan 1 cell hanya boleh 0 - 1 data:
   - Lebih mudah untuk melakukan operasi-operasi relasional berbasis cell seperti:
-    - aggregation / perhitungan
-    - join / penggabungan
+    - Aggregation / perhitungan
+    - Join / penggabungan
+  - Prinsipnya adalah tiap satuan data harus bisa dihitung
+    - Basis data non relasional menyelesaikan permasalahan ini dengan struktur data array dan query penelusuran data
+    - Basis data relasional modern menambahkan fitur tipe data non relasional
 - Banyak artikel menuliskan, latar belakang utama normalisasi basis data adalah untuk mengurangi redundansi data. Memang apa ruginya kalau redundan ?
 
 ### Bentuk ke 1
