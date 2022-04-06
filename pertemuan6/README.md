@@ -118,7 +118,7 @@ Formulasi
 - **Aturan**
   - Tersertifikasi Normalisasi Bentuk ke 1
     - 🚫 Jika belum, sertifikasikan dulu
-  - Tidak boleh ada kolom non key yang bergantung kepada key selain primary key
+  - Tidak boleh ada kolom non key yang bergantung sebagian dari composite key
     - 🚫 Jika ada yang bergantung kepada kolom lain, maka harus dimekarkan menjadi tabel
       - Sertifikasikan kembali tabel hasil pemekaran mulai dari Normalisasi Bentuk ke 1
 
