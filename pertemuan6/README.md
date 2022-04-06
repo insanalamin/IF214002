@@ -25,6 +25,9 @@
     - Basis data non relasional menyelesaikan permasalahan ini dengan struktur data array dan query penelusuran data
     - Basis data relasional modern menambahkan fitur tipe data non relasional
 - Banyak artikel menuliskan, latar belakang utama normalisasi basis data adalah untuk mengurangi redundansi data. Memang apa ruginya kalau redundan ?
+  - Efisiensi media penyimpanan
+  - Satu data memastikan pengubahan data cukup di satu tempat
+    - Mengurangi kesalahan-kesalahan dalam penggunaan oleh aplikasi maupun user
 
 ### Bentuk ke 1
 
@@ -35,6 +38,10 @@
 ## Materi Terkait
 - [Microsoft - Description of the database normalization basics](https://docs.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description)
 - [Wikipedia - Database Normalization](https://en.wikipedia.org/wiki/Database_normalization)
+XGqL-5nGDPg
+## Video Terkait
+- [![](https://img.youtube.com/vi/XGqL-5nGDPg/3.jpg) Mr. Bayu - Belajar Normalisasi Database 1NF, 2NF dan 3NF Bagian 1](https://www.youtube.com/watch?v=XGqL-5nGDPg)
+- [![](https://img.youtube.com/vi/APUF3Fs0ypg/3.jpg) Mr. Bayu - Belajar Normalisasi Database 1NF, 2NF dan 3NF Bagian 1](https://www.youtube.com/watch?v=APUF3Fs0ypg)
 
 ## Asesmen
 
