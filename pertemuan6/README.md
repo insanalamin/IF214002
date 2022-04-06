@@ -12,6 +12,9 @@
 
 ## Normalisasi Basis Data
 
+### Definisi
+> the process of organizing data in a database - Microsoft
+
 ### Latar Belakang
 - Diinisiasi oleh Bapak Basis Data Relasional [Edgar F. Codd](https://www.nae.edu/187653/EDGAR-F-CODD-19232003) (1923 - 2003)
   - Mau tau alasan sebenarnya mengapa ada normalisasi di basis data relasional ? telusuri sejarahnya
@@ -26,6 +29,7 @@
     - Basis data relasional modern menambahkan fitur tipe data non relasional
 - Banyak artikel menuliskan, latar belakang utama normalisasi basis data adalah untuk mengurangi redundansi data. Memang apa ruginya kalau redundan ?
   - Efisiensi media penyimpanan
+    - Beda kasus jika digunakan untuk data warehouse atau cache dari query yang berat
   - Satu data memastikan pengubahan data cukup di satu tempat
     - Mengurangi kesalahan-kesalahan dalam penggunaan oleh aplikasi maupun user
 
