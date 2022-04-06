@@ -30,10 +30,16 @@
     - Mengurangi kesalahan-kesalahan dalam penggunaan oleh aplikasi maupun user
 
 ### Bentuk ke 1
+- Tidak boleh ada sel yang berisi nilai lebih dari satu
+- Harus memiliki primary key
 
 ### Bentuk ke 2
+- Bentuk ke 1 terpenuhi
+- Kolom non key, hanya boleh tergantung kepada primary key
+  - Jika ada yang bergantung kepada kolom lain, maka harus dimekarkan menjadi tabel
 
 ### Bentuk ke 3
+- Bentuk ke 2 terpenuhi
 
 ## Materi Terkait
 - [Microsoft - Description of the database normalization basics](https://docs.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description)
