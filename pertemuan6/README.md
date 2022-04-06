@@ -19,7 +19,7 @@
 #### Mengapa normalisasi basis data ?
 - NF1 - Dengan memperlakukan 1 cell hanya boleh 0 - 1 data:
   - Lebih mudah untuk melakukan operasi-operasi relasional berbasis cell seperti:
-    - Aggregation / perhitungan
+    - Aggregation / agregat
     - Join / penggabungan
   - Prinsipnya adalah tiap satuan data harus bisa dihitung
     - Basis data non relasional menyelesaikan permasalahan ini dengan struktur data array dan query penelusuran data
