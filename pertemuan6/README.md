@@ -29,17 +29,21 @@
   - Satu data memastikan pengubahan data cukup di satu tempat
     - Mengurangi kesalahan-kesalahan dalam penggunaan oleh aplikasi maupun user
 
-### Bentuk ke 1
+### 🎖️ Sertifikasi Normalisasi Bentuk ke 1
 - Tidak boleh ada sel yang berisi nilai lebih dari satu
+  - 🚫 Jika ada yang lebih dari satu, maka mekarkan di record baru
 - Harus memiliki primary key
+  - 🚫 Jika tidak ada, maka tentukan dulu 
 
-### Bentuk ke 2
-- Bentuk ke 1 terpenuhi
+### 🎖️ Sertifikasi Normalisasi Bentuk ke 2
+- Tersertifikasi Normalisasi Bentuk ke 1
+  - 🚫 Jika belum, jadikan dulu
 - Kolom non key, hanya boleh tergantung kepada primary key
-  - Jika ada yang bergantung kepada kolom lain, maka harus dimekarkan menjadi tabel
+  - 🚫 Jika ada yang bergantung kepada kolom lain, maka harus dimekarkan menjadi tabel
+    - Sertifikasikan kembali tabel hasil pemekaran mulai dari Normalisasi Bentuk ke 1
 
-### Bentuk ke 3
-- Bentuk ke 2 terpenuhi
+### 🎖️ Sertifikasi Normalisasi Bentuk ke 3
+- Tersertifikasi Normalisasi Bentuk ke 2
 
 ## Materi Terkait
 - [Microsoft - Description of the database normalization basics](https://docs.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description)
