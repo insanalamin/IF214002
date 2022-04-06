@@ -41,7 +41,8 @@
 XGqL-5nGDPg
 ## Video Terkait
 - [![](https://img.youtube.com/vi/XGqL-5nGDPg/3.jpg) Mr. Bayu - Belajar Normalisasi Database 1NF, 2NF dan 3NF Bagian 1](https://www.youtube.com/watch?v=XGqL-5nGDPg)
-- [![](https://img.youtube.com/vi/APUF3Fs0ypg/3.jpg) Mr. Bayu - Belajar Normalisasi Database 1NF, 2NF dan 3NF Bagian 1](https://www.youtube.com/watch?v=APUF3Fs0ypg)
+- [![](https://img.youtube.com/vi/APUF3Fs0ypg/3.jpg) umikulsum indah - Normalisasi Database - 1NF sampai 3NF (Basis Data)](https://www.youtube.com/watch?v=APUF3Fs0ypg)
+- [![](https://img.youtube.com/vi/UC_tJx4MBgk/3.jpg) Laura Mahendratta - DS-09: Normalisasi Database 1NF 2NF hingga 3NF](https://www.youtube.com/watch?v=UC_tJx4MBgk)
 
 ## Asesmen
 
