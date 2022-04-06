@@ -33,7 +33,8 @@
 ### Bentuk ke 3
 
 ## Materi Terkait
-- [Description of the database normalization basics](https://docs.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description)
+- [Microsoft - Description of the database normalization basics](https://docs.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description)
+- [Wikipedia - Database Normalization](https://en.wikipedia.org/wiki/Database_normalization)
 
 ## Asesmen
 
