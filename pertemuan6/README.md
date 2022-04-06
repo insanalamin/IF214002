@@ -13,24 +13,15 @@
 ## Normalisasi Basis Data
 
 ### Definisi
-> the process of organizing data in a database - Microsoft
+> the process of organizing data in a database. This includes creating tables and establishing relationships between those tables according to rules designed both to protect the data and to make the database more flexible by eliminating redundancy and inconsistent dependency. - Microsoft
 
 ### Latar Belakang
 - Diinisiasi oleh Bapak Basis Data Relasional [Edgar F. Codd](https://www.nae.edu/187653/EDGAR-F-CODD-19232003) (1923 - 2003)
   - Mau tau alasan sebenarnya mengapa ada normalisasi di basis data relasional ? telusuri sejarahnya
+- Ada bentuk: 1 (1970), 2 (1971), 3 (1971), BC (1974), 4 (1977), 5 (1979), 6, dan terus berkembang
 
 #### Mengapa normalisasi basis data ?
-- Memastikan setiap record yang ada dapat diidentifikasi
-  |nama|umur|kota kelahiran|
-  |---|---|---|
-  |Siswo|7|bandung|
-  |Laras|7|bandung|
-  |Prim|7|bandung|
-  |Prim|8|bandung|
-  |Laras|7|bandung|
-  
-  > 🚫 Cari nama Laras yang usianya 7 dari Bandung
-  
+- Memastikan setiap record yang ada dapat diidentifikasi  
 - Dengan memperlakukan 1 cell hanya boleh 0 - 1 data: 
   - Lebih mudah untuk melakukan operasi-operasi relasional berbasis cell seperti:
     - Aggregation / agregat
@@ -45,30 +36,56 @@
     - Mengurangi kesalahan-kesalahan dalam penggunaan oleh aplikasi maupun user
 
 ### 🎖️ Sertifikasi Normalisasi Bentuk ke 1
-- Umumnya wajib digunakan di beragam implementasi basis data
-  - Basis data relasional
-    - Penggunaan operasional / transaksional
-    - Penggunaan cache dan analisis (data warehouse)
-  - Basis data non relasional
+- Umumnya wajib digunakan pada beragam implementasi basis data
+  - ✅ Basis data relasional
+    - ✅ Penggunaan operasional / transaksional
+    - ✅ Penggunaan cache dan analisis (data warehouse)
+  - ✅ Basis data non relasional
 - **Aturan**
   - Tidak boleh ada sel yang berisi nilai lebih dari satu
     - 🚫 Jika ada yang lebih dari satu, maka mekarkan di record baru
   - Harus memiliki primary key
-    - 🚫 Jika tidak ada, maka tentukan dulu 
+    - 🚫 Jika tidak ada, maka tentukan dulu
+      
+      Tabel tanpa primary key, mana Laras umur 7 tahun dari Bandung ?
+      |nama|umur|asal kota|
+      |---|---|---|
+      |Siswo|7|Bandung|
+      |Laras|7|Bandung|
+      |Prim|7|Bandung|
+      |Prim|8|Bandung|
+      |Laras|7|Bandung|
+      
+      Tabel di atas ditambahkan primary key menjadi
+      |**[PK] no perserta**|nama|umur|asal kota|
+      |---|---|---|---|
+      |**1**|Siswo|7|Bandung|
+      |**2**|Laras|7|Bandung|
+      |**3**|Prim|7|Bandung|
+      |**4**|Prim|8|Bandung|
+      |**5**|Laras|7|Bandung|
 
 ### 🎖️ Sertifikasi Normalisasi Bentuk ke 2
-- Umumnya wajib digunakan basis data
-  - Basis data relasional
-    - Penggunaan operasional / transaksional
+- Umumnya wajib digunakan pada
+  - ✅ Basis data relasional
+    - ✅ Penggunaan operasional / transaksional
 - **Aturan**
   - Tersertifikasi Normalisasi Bentuk ke 1
-    - 🚫 Jika belum, jadikan dulu
-  - Kolom non key, hanya boleh tergantung kepada primary key
+    - 🚫 Jika belum, sertifikasikan dulu
+  - Tidak boleh ada kolom non key yang bergantung kepada key selain primary key
     - 🚫 Jika ada yang bergantung kepada kolom lain, maka harus dimekarkan menjadi tabel
       - Sertifikasikan kembali tabel hasil pemekaran mulai dari Normalisasi Bentuk ke 1
 
 ### 🎖️ Sertifikasi Normalisasi Bentuk ke 3
-- Tersertifikasi Normalisasi Bentuk ke 2
+- Umumnya wajib digunakan pada
+  - ✅ Basis data relasional
+    - ✅ Penggunaan operasional / transaksional
+- **Aturan**
+  - Tersertifikasi Normalisasi Bentuk ke 2
+    - 🚫 Jika belum, sertifikasikan dulu
+  - Kolom non key, hanya boleh tergantung kepada primary key
+    - 🚫 Jika ada yang bergantung kepada kolom lain, maka harus dimekarkan menjadi tabel
+      - Sertifikasikan kembali tabel hasil pemekaran mulai dari Normalisasi Bentuk ke 1
 
 ## Materi Terkait
 - [Microsoft - Description of the database normalization basics](https://docs.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description)
