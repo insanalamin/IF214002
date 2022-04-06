@@ -42,28 +42,62 @@
     - ✅ Penggunaan cache dan analisis (data warehouse)
   - ✅ Basis data non relasional
 - **Aturan**
-  - Tidak boleh ada sel yang berisi nilai lebih dari satu
-    - 🚫 Jika ada yang lebih dari satu, maka mekarkan di record baru
   - Harus memiliki primary key
     - 🚫 Jika tidak ada, maka tentukan dulu
       
       Tabel tanpa primary key, mana Laras umur 7 tahun dari Bandung ?
-      |nama|umur|asal kota|
-      |---|---|---|
-      |Siswo|7|Bandung|
-      |Laras|7|Bandung|
-      |Prim|7|Bandung|
-      |Prim|8|Bandung|
-      |Laras|7|Bandung|
+      ||nama|umur|asal kota|
+      |---|---|---|---|
+      ||Siswo|7|Bandung|
+      |🔴|Laras|7|Bandung|
+      ||Prim|7|Bandung|
+      ||Prim|8|Bandung|
+      |🔴|Laras|7|Bandung|
       
       Tabel di atas ditambahkan primary key menjadi
-      |**[PK] no perserta**|nama|umur|asal kota|
+      
+      |PK|no peserta|
+      |---|---|
+      
+      |🟢 no perserta|nama|umur|asal kota|
       |---|---|---|---|
-      |**1**|Siswo|7|Bandung|
-      |**2**|Laras|7|Bandung|
-      |**3**|Prim|7|Bandung|
-      |**4**|Prim|8|Bandung|
-      |**5**|Laras|7|Bandung|
+      |🟢 1|Siswo|7|Bandung|
+      |🟢 2|Laras|7|Bandung|
+      |🟢 3|Prim|7|Bandung|
+      |🟢 4|Prim|8|Bandung|
+      |🟢 5|Laras|7|Bandung|
+      
+  - Tidak boleh ada sel yang berisi nilai lebih dari satu
+    - 🚫 Jika ada yang lebih dari satu, maka mekarkan di record baru
+      
+      Kolom hobi memiliki nilai lebih dari satu
+      
+      |PK|no peserta|
+      |---|---|
+      
+      |no perserta|nama|umur|asal kota|hobi|
+      |---|---|---|---|---|
+      |1|Siswo|7|Bandung|maraton|
+      |2|Laras|7|Bandung|🔴 minta angpau, makan bakpau|
+      |3|Prim|7|Bandung|🔴 naik gunung, nonton, berkebun|
+      |4|Prim|8|Bandung|menulis|
+      |5|Laras|7|Bandung|fotografi|
+      
+      Hobi yang lebih dari satu, dimekarkan jadi record baru
+      
+      |PK|no peserta, hobi|
+      |---|---|
+      
+      |no perserta|nama|umur|asal kota|hobi|
+      |---|---|---|---|---|
+      |1|Siswo|7|Bandung|maraton|
+      |2|Laras|7|Bandung|🟢 minta angpau|
+      |2|Laras|7|Bandung|🟢 makan bakpau|
+      |3|Prim|7|Bandung|🟢 naik gunung|
+      |3|Prim|7|Bandung|🟢 nonton|
+      |3|Prim|7|Bandung|🟢 berkebun|
+      |4|Prim|8|Bandung|menulis|
+      |5|Laras|7|Bandung|fotografi|
 
 ### 🎖️ Sertifikasi Normalisasi Bentuk ke 2
 - Umumnya wajib digunakan pada
