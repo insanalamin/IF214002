@@ -15,6 +15,10 @@
 ### Definisi
 > the process of organizing data in a database. This includes creating tables and establishing relationships between those tables according to rules designed both to protect the data and to make the database more flexible by eliminating redundancy and inconsistent dependency. - Microsoft
 
+> Normalization is the process of organizing a database to reduce redundancy and improve data integrity. Normalization also simplifies the database design so that it achieves the optimal structure composed of atomic elements (i.e. elements that cannot be broken down into smaller parts). - Database.guide
+
+> Normalization is a series of steps followed to obtain a database design that allows for efficient access and storage of data. These steps reduce data redundancy and the chances of data becoming inconsistent. - Oracle
+
 ### Latar Belakang
 - Diinisiasi oleh Bapak Basis Data Relasional [Edgar F. Codd](https://www.nae.edu/187653/EDGAR-F-CODD-19232003) (1923 - 2003)
   - Mau tau alasan sebenarnya mengapa ada normalisasi di basis data relasional ? telusuri sejarahnya
@@ -125,6 +129,8 @@
 - [Microsoft - Description of the database normalization basics](https://docs.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description)
 - [Wikipedia - Database Normalization](https://en.wikipedia.org/wiki/Database_normalization)
 XGqL-5nGDPg
+- [Oracle - Normalization](https://www.orafaq.com/wiki/Normalization)
+
 ## Video Terkait
 - [![](https://img.youtube.com/vi/XGqL-5nGDPg/3.jpg) Mr. Bayu - Belajar Normalisasi Database 1NF, 2NF dan 3NF Bagian 1](https://www.youtube.com/watch?v=XGqL-5nGDPg)
 - [![](https://img.youtube.com/vi/APUF3Fs0ypg/3.jpg) umikulsum indah - Normalisasi Database - 1NF sampai 3NF (Basis Data)](https://www.youtube.com/watch?v=APUF3Fs0ypg)
