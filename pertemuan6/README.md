@@ -19,6 +19,13 @@
 
 > Normalization is a series of steps followed to obtain a database design that allows for efficient access and storage of data. These steps reduce data redundancy and the chances of data becoming inconsistent. - Oracle
 
+Formulasi
+- Aturan
+- Merapikan struktur basis data
+- Untuk
+  - Mengurangi redundansi
+  - Meningkatkan integritas data 
+
 ### Latar Belakang
 - Diinisiasi oleh Bapak Basis Data Relasional [Edgar F. Codd](https://www.nae.edu/187653/EDGAR-F-CODD-19232003) (1923 - 2003)
   - Mau tau alasan sebenarnya mengapa ada normalisasi di basis data relasional ? telusuri sejarahnya
@@ -38,6 +45,7 @@
     - Beda kasus jika digunakan untuk data warehouse atau cache dari query yang berat
   - Satu data memastikan pengubahan data cukup di satu tempat
     - Mengurangi kesalahan-kesalahan dalam penggunaan oleh aplikasi maupun user
+- Memudahkan memahami struktur basis data
 
 ### 🎖️ Sertifikasi Normalisasi Bentuk ke 1
 - Umumnya wajib digunakan pada beragam implementasi basis data
