@@ -20,31 +20,52 @@
   - Mau tau alasan sebenarnya mengapa ada normalisasi di basis data relasional ? telusuri sejarahnya
 
 #### Mengapa normalisasi basis data ?
-- NF1 - Dengan memperlakukan 1 cell hanya boleh 0 - 1 data:
+- Memastikan setiap record yang ada dapat diidentifikasi
+  |nama|umur|kota kelahiran|
+  |---|---|---|
+  |Siswo|7|bandung|
+  |Laras|7|bandung|
+  |Prim|7|bandung|
+  |Prim|8|bandung|
+  |Laras|7|bandung|
+  
+  > 🚫 Cari nama Laras yang usianya 7 dari Bandung
+  
+- Dengan memperlakukan 1 cell hanya boleh 0 - 1 data: 
   - Lebih mudah untuk melakukan operasi-operasi relasional berbasis cell seperti:
     - Aggregation / agregat
     - Join / penggabungan
   - Prinsipnya adalah tiap satuan data harus bisa dihitung
     - Basis data non relasional menyelesaikan permasalahan ini dengan struktur data array dan query penelusuran data
     - Basis data relasional modern menambahkan fitur tipe data non relasional
-- Banyak artikel menuliskan, latar belakang utama normalisasi basis data adalah untuk mengurangi redundansi data. Memang apa ruginya kalau redundan ?
+- Banyak sumber menuliskan, latar belakang utama normalisasi basis data adalah untuk mengurangi redundansi data. Memang apa ruginya kalau redundan ?
   - Efisiensi media penyimpanan
     - Beda kasus jika digunakan untuk data warehouse atau cache dari query yang berat
   - Satu data memastikan pengubahan data cukup di satu tempat
     - Mengurangi kesalahan-kesalahan dalam penggunaan oleh aplikasi maupun user
 
 ### 🎖️ Sertifikasi Normalisasi Bentuk ke 1
-- Tidak boleh ada sel yang berisi nilai lebih dari satu
-  - 🚫 Jika ada yang lebih dari satu, maka mekarkan di record baru
-- Harus memiliki primary key
-  - 🚫 Jika tidak ada, maka tentukan dulu 
+- Umumnya wajib digunakan di beragam implementasi basis data
+  - Basis data relasional
+    - Penggunaan operasional / transaksional
+    - Penggunaan cache dan analisis (data warehouse)
+  - Basis data non relasional
+- **Aturan**
+  - Tidak boleh ada sel yang berisi nilai lebih dari satu
+    - 🚫 Jika ada yang lebih dari satu, maka mekarkan di record baru
+  - Harus memiliki primary key
+    - 🚫 Jika tidak ada, maka tentukan dulu 
 
 ### 🎖️ Sertifikasi Normalisasi Bentuk ke 2
-- Tersertifikasi Normalisasi Bentuk ke 1
-  - 🚫 Jika belum, jadikan dulu
-- Kolom non key, hanya boleh tergantung kepada primary key
-  - 🚫 Jika ada yang bergantung kepada kolom lain, maka harus dimekarkan menjadi tabel
-    - Sertifikasikan kembali tabel hasil pemekaran mulai dari Normalisasi Bentuk ke 1
+- Umumnya wajib digunakan basis data
+  - Basis data relasional
+    - Penggunaan operasional / transaksional
+- **Aturan**
+  - Tersertifikasi Normalisasi Bentuk ke 1
+    - 🚫 Jika belum, jadikan dulu
+  - Kolom non key, hanya boleh tergantung kepada primary key
+    - 🚫 Jika ada yang bergantung kepada kolom lain, maka harus dimekarkan menjadi tabel
+      - Sertifikasikan kembali tabel hasil pemekaran mulai dari Normalisasi Bentuk ke 1
 
 ### 🎖️ Sertifikasi Normalisasi Bentuk ke 3
 - Tersertifikasi Normalisasi Bentuk ke 2
