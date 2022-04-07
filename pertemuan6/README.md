@@ -252,4 +252,7 @@ Kelas E
 
 **Perbaiki struktur basis data project**
 1. Pastikan struktur basis data project sudah sesuai dengan proses bisnis
-2. Normalisasi seluruh tabel hingga menjadi bentuk ke 3
+2. Normalisasi seluruh tabel hingga menjadi bentuk ke 3, dan beri catatan pada tiap tabel
+   - Ternormalisasi bentuk ke 1
+   - Ternormalisasi bentuk ke 2
+   - Ternormalisasi bentuk ke 3 
