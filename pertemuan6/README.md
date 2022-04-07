@@ -12,6 +12,9 @@ Mahasiswa mampu mengimplementasikan konsep UID dan mengidentifikasi pelanggaran 
   - Bentuk ke 3
 
 ## UID
+- Mengidentifikasi 1 record
+  - Candidate Key
+    - Primary Key
 
 ## Normalisasi Basis Data
 
