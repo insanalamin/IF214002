@@ -1,4 +1,7 @@
-# Pertemuan 6 Basis Data
+# Pertemuan 6 Basis Data - UID dan Normalisasi
+
+## Lesson Learning Outcome
+Mahasiswa mampu mengimplementasikan konsep UID dan mengidentifikasi pelanggaran terhadap konsep normalisasi dan menyelesaikannya
 
 ## Outline
 - UID
