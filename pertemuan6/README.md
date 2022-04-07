@@ -250,4 +250,6 @@ XGqL-5nGDPg
 
 Kelas E
 
-![Asesmen pertemuan 6](qr-basis-data-pertemuan-6.png)
+**Perbaiki struktur basis data project**
+1. Pastikan struktur basis data project sudah sesuai dengan proses bisnis
+2. Normalisasi seluruh tabel hingga menjadi bentuk ke 3
