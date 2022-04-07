@@ -125,8 +125,38 @@ Formulasi
   - Tersertifikasi Normalisasi Bentuk ke 1
     - 🚫 Jika belum, sertifikasikan dulu
   - Tidak boleh ada kolom non key yang bergantung sebagian dari composite key
-    - 🚫 Jika ada yang bergantung kepada kolom lain, maka harus dimekarkan menjadi tabel
+    - 🚫 Jika ada yang bergantung kepada sebagian kolom composite key, maka harus dimekarkan menjadi tabel
       - Sertifikasikan kembali tabel hasil pemekaran mulai dari Normalisasi Bentuk ke 1
+- Contoh
+
+  **Mahasiswa**
+  
+  🔑 id
+  |🔑 id|nama|
+  |---|---|
+  |1|Nenti|
+  |2|Romi|
+  |3|Rifki|
+  |4|Rizal|
+  
+  **Mata Kuliah**
+  
+  🔑 id
+  |🔑 id|nama|
+  |---|---|
+  |1|Basis Data|
+  |2|Rekayasa Perangkat Lunak|
+  |3|Sistem Operasi|
+  
+  Kepesertaan Kelas
+  
+  🔑 id_mahasiswa, id_mata_kuliah
+  |🔑 id_mahasiswa|🔑 id_mata_kuliah|nilai|
+  |---|---|---|
+  |1|1|83|
+  |1|2|89|
+  |3|2|98|
+  |3|3|71|
 
 ### 🎖️ Sertifikasi Normalisasi Bentuk ke 3
 - Umumnya wajib digunakan pada
