@@ -194,9 +194,46 @@ Formulasi
 - **Aturan**
   - Tersertifikasi Normalisasi Bentuk ke 2
     - 🚫 Jika belum, sertifikasikan dulu
-  - Kolom non key, hanya boleh tergantung kepada primary key
+  - Kolom non key, hanya boleh tergantung kepada primary key. Tidak boleh ada ketergantungan tambahan ke kolom non key lainnya
     - 🚫 Jika ada yang bergantung kepada kolom lain, maka harus dimekarkan menjadi tabel
       - Sertifikasikan kembali tabel hasil pemekaran mulai dari Normalisasi Bentuk ke 1
+
+- Contoh
+
+  **Mahasiswa**
+  
+  🔑 id
+  
+  |🔑 id|nama|alamat|kode pos|🔴 kota|🔴 kecamatan|
+  |---|---|---|---|---|---|
+  |1|Nenti|Jalan A No. 3|1284|🔴 bandung|🔴 andir|
+  |2|Romi|Jalan B No. 2|1326|🔴 cimahi|🔴 cimahi utara|
+  |3|Rifki|Jalan C No. 6|1662|🔴 kab bandung|🔴 solokanjeruk|
+  |4|Rizal|Jalan D No. 7|1771|🔴 sumedang|🔴 buah dua|
+  
+  Di normalkan menjadi
+  
+  **Mahasiswa**
+  
+  🔑 id
+  
+  |🔑 id|nama|alamat|kode pos|
+  |---|---|---|---|
+  |1|Nenti|Jalan A No. 3|1284|
+  |2|Romi|Jalan B No. 2|1326|
+  |3|Rifki|Jalan C No. 6|1662|
+  |4|Rizal|Jalan D No. 7|1771|  
+  
+  **Kode Pos**
+  
+  🔑 
+  
+  |🔑 kode|🟢 kota|🟢 kecamatan|
+  |---|---|---|
+  |1284|🟢 bandung|🟢 andir|
+  |1326|🟢 cimahi|🟢 cimahi utara|
+  |1662|🟢 kab bandung|🟢 solokanjeruk|
+  |1771|🟢 sumedang|🟢 buah dua|
 
 ## Materi Terkait
 - [Microsoft - Description of the database normalization basics](https://docs.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description)
