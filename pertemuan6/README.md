@@ -148,7 +148,27 @@ Formulasi
   |2|Rekayasa Perangkat Lunak|
   |3|Sistem Operasi|
   
-  Kepesertaan Kelas
+  **Dosen**
+  
+  |🔑 id|nama|
+  |---|---|
+  |1|Insan|
+  |2|Ichsan|
+  |3|Eva|
+  
+  **Kepesertaan Kelas**
+  
+  🔑 id_mahasiswa, id_mata_kuliah
+  |🔑 id_mahasiswa|🔑 id_mata_kuliah|nilai|🔴 id_dosen|
+  |---|---|---|---|
+  |1|1|83|🔴 1|
+  |1|2|89|🔴 2|
+  |3|2|98|🔴 2|
+  |3|3|71|🔴 3|
+  
+  id_dosen hanya bergantung ke 🔑 id_mata_kuliah, tidak ke 🔑 id_mahasiswa, 🔑 id_mata_kuliah
+  
+  **Kepesertaan Kelas**
   
   🔑 id_mahasiswa, id_mata_kuliah
   |🔑 id_mahasiswa|🔑 id_mata_kuliah|nilai|
@@ -157,6 +177,15 @@ Formulasi
   |1|2|89|
   |3|2|98|
   |3|3|71|
+  
+  **Mata Kuliah**
+  
+  🔑 id
+  |🔑 id|nama|🟢 id_dosen|
+  |---|---|---|
+  |1|Basis Data|🟢 1|
+  |2|Rekayasa Perangkat Lunak|🟢 2|
+  |3|Sistem Operasi|🟢 3|
 
 ### 🎖️ Sertifikasi Normalisasi Bentuk ke 3
 - Umumnya wajib digunakan pada
