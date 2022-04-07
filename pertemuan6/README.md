@@ -60,7 +60,7 @@ Formulasi
     - ✅ Penggunaan cache dan analisis (data warehouse)
   - ✅ Basis data non relasional
 - **Aturan**
-  - Harus memiliki primary key
+  - Harus memiliki primary key (1 kolom, atau multi kolom(composite))
     - 🚫 Jika tidak ada, maka tentukan dulu
       
       Tabel tanpa primary key, mana Laras umur 7 tahun dari Bandung ?
