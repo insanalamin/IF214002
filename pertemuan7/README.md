@@ -26,7 +26,67 @@
 
 ### Perubahan ERD untuk entitas yang memiliki data historis
 
+Contoh:
+
+||Karyawan|
+|---|---|
+|PK|ID|
+||Nama|
+||Gaji Bulanan|
+||Tanggal Mulai Gaji|
+
+- Karena gaji bulanan dapat berubah seiring waktu, maka data historis gaji perlu disimpan
+- Dengan bentuk entitas seperti di atas, data historis gaji tidak dapat diketahui
+- Maka ditambahkan entitas untuk menyimpan data historis gaji
+
+||Karyawan|
+|---|---|
+|PK|ID|
+||Nama|
+
+||Histori Gaji|
+|---|---|
+|PK|Tanggal Mulai Gaji|
+|PK|ID Karyawan|
+||Gaji Bulanan|
+
+Dengan relasi 
+|Karyawan|1:M|Gaji|
+|---|---|---|
+
+
 ### Tanggal sebagai atribut vs Hari sebagai entitas
+
+- Dalam entitas penyimpan data historis, **Tanggal** cukup menjadi atribut jika tidak ada atribut lain yang bergantung kepada **Tanggal**
+  - Contoh:  
+  
+  ||Jadwal Pertandingan|
+  |---|---|
+  |PK|ID|
+  ||Home|
+  ||Away|
+  ||Tanggal|
+  ||Stadion|
+  
+- Jika ada atribut yang bergantung terhadap **Tanggal** misal **Kelembaban** dan **Temperatur** maka atribut **Tanggal** perlu dimekarkan menjadi entitas baru **Hari**
+  - Contoh: entitas **Pembelian Tiket** yang mewakili jumlah pembelian tiket di tempat wisata berdasarkan tanggal
+
+    ||Pembelian Tiket|
+    |---|---|
+    |PK|ID|
+    ||Kuantitas|
+    ||Harga Tiket|
+    ||Tanggal|
+    ||Kelembaban|
+    ||Temperatur|
+
+    Pada contoh diatas, atribut **Kelembaban** dan **Temperatur** melanggar aturan normalisasi bentuk ke 3 karena bergantung kepada **Tanggal**. Sehingga atribut **Tanggal** dimekarkan menjadi entitas **Hari**
+    
+    ||Hari|
+    |---|---|
+    |PK|Tanggal|
+    ||Kelembaban|
+    ||Temperatur|
 
 ### Penanganan data historis untuk harga barang 
 
