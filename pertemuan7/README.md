@@ -10,7 +10,9 @@
 - Jumlah kasus Covid 19 harian di Dunia
 
   ![](worldometer-covid-cases-2022-04-13.png)
-- 
+- Jumlah subscriber dan video dilihat per minggu
+
+  ![](chocomelon.png)
 
 ## Pengantar dan Contoh Penggunaan Basis Data Relasional
 
