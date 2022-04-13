@@ -13,6 +13,10 @@
 - Jumlah subscriber dan video dilihat per minggu
 
   ![](chocomelon.png)
+- Trafik website harian di Google Analytics
+
+  ![](ga-hongkiat.png)
+
 
 ## Pengantar dan Contoh Penggunaan Basis Data Relasional
 
