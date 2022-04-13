@@ -99,3 +99,10 @@ Dengan relasi
 ## Materi Terkait
 - [Changes & Historical Modeling](https://sqldatabasetutorials.com/sql-db-section/changes-historical-modeling/)
 - [Relational Database](https://sqldatabasetutorials.com/sql-db/relational-database/)
+
+## Quiz
+- Rancang ERD untuk penyimpanan data karyawan dari sebuah perusahaan, lengkap dengan data historis gaji, data historis tempat tinggal, dan data historis jabatan. Selanjutnya, implementasikan ERD tersebut pada basis data relasional (MySQL / PostgreSQL / SQL Server / dll) menggunakan perintah 
+```sql
+CREATE TABLE
+```
+- Simpan keseluruhan jawaban pada file quiz.md di folder repository pertemuan 7
