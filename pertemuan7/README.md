@@ -4,6 +4,9 @@
 
 Mengapa beberapa jenis data disimpan secara historis ?
 - Indikator pembangunan dalam sebuah wilayah
+  - Populasi penduduk Jawa Barat tahun 2010, 2011, 2012, 2013, dst.
+  - Tingkat kemiskinan penduduk Kota Surabaya tahun 2015, 2016, 2017, dst. 
+- Tingkat kemacetan ruas jalan per menit
 
 ## Materi Terkait
 - [Changes & Historical Modeling](https://sqldatabasetutorials.com/sql-db-section/changes-historical-modeling/)
