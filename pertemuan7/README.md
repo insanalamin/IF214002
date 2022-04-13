@@ -17,6 +17,18 @@
 
   ![](ga-hongkiat.png)
 
+### Yang perlu diperhatikan dalam pemodelan data historis
+- Apakah setiap ada operasi pada data harus dicatat untuk audit ?
+- Apakah nilai atribut dari entitas berubah seiring waktu ?
+  - Contoh: atribut berat badan dari entitas penduduk
+- Apakah butuh membuat laporan dari data arsip ?
+- Berapa lama data historis butuh disimpan ?
+
+### Perubahan ERD untuk entitas yang memiliki data historis
+
+### Tanggal sebagai atribut vs Hari sebagai entitas
+
+### Penanganan data historis untuk harga barang 
 
 ## Pengantar dan Contoh Penggunaan Basis Data Relasional
 
