@@ -12,6 +12,12 @@
   ![](worldometer-covid-cases-2022-04-13.png)
 - 
 
+## Pengantar dan Contoh Penggunaan Basis Data Relasional
+
+### Membuat Tabel
+
+### Query Data
+
 ## Materi Terkait
 - [Changes & Historical Modeling](https://sqldatabasetutorials.com/sql-db-section/changes-historical-modeling/)
 - [Relational Database](https://sqldatabasetutorials.com/sql-db/relational-database/)
