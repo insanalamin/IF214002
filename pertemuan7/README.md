@@ -58,7 +58,7 @@ Contoh:
 ||Gaji Bulanan|
 
 Dengan relasi 
-|Karyawan|1:M|Gaji|
+|Karyawan|1:M|Histori Gaji|
 |---|---|---|
 
 
