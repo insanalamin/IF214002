@@ -13,6 +13,7 @@ Mahasiswa mampu mengidentifikasi berbagai kebutuhan Basis Data Relasional dalam 
   - Populasi penduduk Jawa Barat tahun 2010, 2011, 2012, 2013, dst.
   - Tingkat kemiskinan penduduk Kota Surabaya tahun 2015, 2016, 2017, dst. 
 - Kepadatan lalu lintas ruas-ruas jalan di Kota Bandung per menit
+- Monitoring kondisi fisik & mental per jam / per hari / per menit
 - Jumlah kasus Covid 19 harian di Dunia
 
   ![](worldometer-covid-cases-2022-04-13.png)
