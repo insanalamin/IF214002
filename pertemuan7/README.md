@@ -6,7 +6,7 @@ Mahasiswa mampu mengidentifikasi berbagai kebutuhan Basis Data Relasional dalam 
 ## Pemodelan Data Historis
 
 ### Mengapa beberapa jenis data disimpan secara historis ?
-- Analisis pengambilan kebijakan
+- Analisis pengambilan kebijakan & mengambil hikmah
 
 #### Contoh
 - Indikator pembangunan dalam sebuah wilayah
