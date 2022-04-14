@@ -120,4 +120,8 @@ Dengan relasi
 ```sql
 CREATE TABLE
 ```
+
+```python
+print("Quiz Pertemuan 7")
+```
 - Simpan keseluruhan jawaban pada file quiz.md di folder repository pertemuan 7
