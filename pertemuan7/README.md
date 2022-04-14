@@ -102,7 +102,7 @@ Dengan relasi
 ### Membuat Tabel
 [Membuat Tabel](https://www.tutorialspoint.com/mariadb/mariadb_create_tables.htm)
 
-### Query Data
+### Select Data
 
 ## Materi Terkait
 - [Changes & Historical Modeling](https://sqldatabasetutorials.com/sql-db-section/changes-historical-modeling/)
