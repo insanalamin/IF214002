@@ -1,7 +1,7 @@
 # Pertemuan 7 Basis Data - Pendekatan Basis Data Relasional dalam Penyelesaian Kasus Data Historical dan Kompleks
 
 ## Lesson Learning Outcome
-Mahasiswa mampu mengidentifikasi berbagai kebutuhan dalam bingkat Basis Data Relasional dalam kasus kompleks
+Mahasiswa mampu mengidentifikasi berbagai kebutuhan Basis Data Relasional dalam kasus data historis dan data kompleks
 
 ## Pemodelan Data Historis
 
