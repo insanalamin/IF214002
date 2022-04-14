@@ -100,6 +100,7 @@ Dengan relasi
 ## Pengantar dan Contoh Penggunaan Basis Data Relasional
 
 ### Membuat Tabel
+[Membuat Tabel](https://www.tutorialspoint.com/mariadb/mariadb_create_tables.htm)
 
 ### Query Data
 
