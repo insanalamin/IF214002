@@ -6,6 +6,9 @@ Mahasiswa mampu mengidentifikasi berbagai kebutuhan Basis Data Relasional dalam 
 ## Pemodelan Data Historis
 
 ### Mengapa beberapa jenis data disimpan secara historis ?
+- Analisis pengambilan kebijakan
+
+#### Contoh
 - Indikator pembangunan dalam sebuah wilayah
   - Populasi penduduk Jawa Barat tahun 2010, 2011, 2012, 2013, dst.
   - Tingkat kemiskinan penduduk Kota Surabaya tahun 2015, 2016, 2017, dst. 
