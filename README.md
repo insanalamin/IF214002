@@ -8,7 +8,7 @@
 |---                                                                  |---  |---  |---                |---|
 |[Nenti Nurnaningsih](https://github.com/nentinur/IF214002)           |     |     |                   |   |
 |[Normalika Shandi](https://github.com/NormalikaShandi/IF214002-NEW)  |     |     |                   |   |
-|[Nugraha Adi Sulistyo](https://github.com/nugrahaas/IF214002)        |     |L0.7 |                   |   |
+|[Nugraha Adi Sulistyo](https://github.com/nugrahaas/IF214002)        |     |L0.7 |                   |Warning: 1   |
 |[Nur Kholis majid](https://github.com/Nurkholis070401/IF214002)      |     |     |                   |   |
 |[Nurdila Farha Kamila](https://github.com/nurdilafarha/IF214002)     |     |L0.7 |                   |   |
 |[Nurrohman](https://github.com/Nurrohman10/IF214002)                 |     |     |                   |   |
