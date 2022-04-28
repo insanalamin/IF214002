@@ -5,5 +5,5 @@
 
 ## Materi Praktikum
 - Instalasi Docker
-  - Instalasi MySQL via Docker
+  - Instalasi MySQL via Docker / Instalasi MySQL via installer OS  
 - Instalasi Dbeaver
