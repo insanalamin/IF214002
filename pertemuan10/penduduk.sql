@@ -1,13 +1,13 @@
 create table penduduk (
-	id INT,
-	nama_lengkap VARCHAR(50),
-	kode_kabupaten INT,
-	nomor_hp VARCHAR(50),
-	gender VARCHAR(50),
-	tanggal_lahir DATE,
-	ijazah_terakhir INT,
-	pekerjaan INT,
-	penghasilan_bulanan INT
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	nama_lengkap VARCHAR(50) NOT NULL,
+	kode_kabupaten INT NOT NULL,
+	nomor_hp VARCHAR(50) NOT NULL,
+	gender VARCHAR(50) NOT NULL,
+	tanggal_lahir DATE NOT NULL,
+	ijazah_terakhir INT NOT NULL,
+	pekerjaan INT NOT NULL,
+	penghasilan_bulanan INT NOT NULL
 );
 insert into penduduk (id, nama_lengkap, kode_kabupaten, nomor_hp, gender, tanggal_lahir, ijazah_terakhir, pekerjaan, penghasilan_bulanan) values (1, 'Jajang Parradine', 3201, '+86 246 664 7659', 'M', '1984-02-02', 8, 4, 7);
 insert into penduduk (id, nama_lengkap, kode_kabupaten, nomor_hp, gender, tanggal_lahir, ijazah_terakhir, pekerjaan, penghasilan_bulanan) values (2, 'Asep Ancketill', 3213, '+255 980 733 7670', 'M', '1998-05-29', 5, 13, 9);
