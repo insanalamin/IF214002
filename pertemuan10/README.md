@@ -26,7 +26,28 @@ Digunakan banyak oleh profesi Data Architect, Data Engineer, profesi2 lain di ba
   ```
 
 - [Tutorialspoint: DROP TABLE - Menghapus tabel yang ada](https://www.tutorialspoint.com/mysql/mysql-drop-tables.htm)
+  ```sql
+  DROP TABLE binatang
+  ```
+  
 - [Tutorialspoint: ALTER TABLE - Mengubah struktur tabel yang ada](https://www.tutorialspoint.com/mysql/mysql_alter_table.htm)
+  
+  Ketika data makin besar, ALTER TABLE ini bisa sangat lambat, jadi cara alternatif mengubah struktur tabel ketika data sangat besar, itu dengan membuat tabel baru dengan struktur teroptimasi, kemudian melakukan ETL dari tabel lama ke tabel baru
+  
+  - Menambahkan & Menghapus Kolom
+    ```sql
+    ALTER TABLE penduduk ADD COLUMN (hobi SMALLINT)
+    ```
+    
+    ```sql
+    ALTER TABLE penduduk ADD COLUMN (nama_awal varchar(40), nama_akhir VARCHAR(40))
+    ```
+    
+  - Menambahkan & Menghapus Index
+  - Menambahkan & Menghapus Primary Key
+  - Menambahkan & Menghapus Foreign Key
+  - Menambahkan & Menghapus Constraint
+    
 - [Tutorialspoint: INDEX - Mengoptimasi query dengan mekanisme indexing](https://www.tutorialspoint.com/mysql/mysql-indexes.htm)
 
 ### Data Manipulation Language
