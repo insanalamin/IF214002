@@ -68,6 +68,14 @@ Digunakan banyak oleh profesi Data Engineer, Backend Developer, Mobile Developer
     - Tipe data dari kolom pada record yang ditambahkan berbeda dengan tipe data dari kolom yang didefinisikan
 
 - [Tutorialspoint: UPDATE - Mengubah record yang ada](https://www.tutorialspoint.com/mysql/mysql-update-query.htm)
+  ```sql
+  UPDATE penduduk 
+  SET 
+    nama_lengkap = 'Asep Suherman',
+    kode_kabupaten = '3205'
+  WHERE 
+    id = 2
+  ```
 - [Tutorialspoint: DELETE - Menghapus record yang ada](https://www.tutorialspoint.com/mysql/mysql-delete-query.htm)
 
 ### Data Query Language
