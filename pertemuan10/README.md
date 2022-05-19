@@ -86,6 +86,7 @@ Digunakan banyak oleh profesi BI Analyst, BI Developer, Data Analyst, Data Engin
 - [Tutorialspoint: SELECT, FROM - Memilih atribut / kolom yang akan ditampilkan dari satu atau lebih tabel](https://www.tutorialspoint.com/mysql/mysql-select-query.htm)
 - [Tutorialspoint: WHERE - Memfilter record hasil SELECT, FROM berdasarkan operator kondisi](https://www.tutorialspoint.com/mysql/mysql-where-clause.htm)
 - [Tutorialspoint: LIKE - Membandingkan bagian dari string](https://www.tutorialspoint.com/mysql/mysql-like-clause.htm)
+- [Tutorialspoint: IN - Menjadi bagian dari array](https://www.tutorialspoint.com/mysql/mysql-in-clause.htm)
 - [Tutorialspoint: ORDER BY - Mengurutkan hasil berdasarkan atribut](https://www.tutorialspoint.com/mysql/mysql-like-clause.htm)
 - [Tutorialspoint: JOIN - Menggabungkan lebih dari satu tabel dengan kondisi tertentu](https://www.tutorialspoint.com/mysql/mysql-using-joins.htm)
 - [Tutorialspoint: CONCAT - Menggabungkan isi data](https://www.tutorialspoint.com/mysql/mysql-concat-function.htm)
@@ -105,7 +106,7 @@ Digunakan banyak oleh profesi BI Analyst, BI Developer, Data Analyst, Data Engin
     ```sql
     SELECT nama_lengkap AS nama FROM penduduk
     ```
-  - Subquery
+- [Tutorialspoint: Subquery](https://www.tutorialspoint.com/Subquery-in-SQL)
 
 ### Lain Lain
 - [Tutorialspoint: NULL - Ketiadaan data](https://www.tutorialspoint.com/mysql/mysql-null-values.htm)
