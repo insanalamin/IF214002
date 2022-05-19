@@ -1,5 +1,5 @@
 create table penduduk (
-	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	id INT NOT NULL PRIMARY KEY,
 	nama_lengkap VARCHAR(50) NOT NULL,
 	kode_kabupaten INT NOT NULL,
 	nomor_hp VARCHAR(50) NOT NULL,
