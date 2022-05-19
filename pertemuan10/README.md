@@ -90,6 +90,9 @@ Digunakan banyak oleh profesi BI Analyst, BI Developer, Data Analyst, Data Engin
   - [Tutorialspoint: IN - Menjadi bagian dari array](https://www.tutorialspoint.com/mysql/mysql-in-clause.htm)
 - [Tutorialspoint: ORDER BY - Mengurutkan hasil berdasarkan atribut](https://www.tutorialspoint.com/mysql/mysql-like-clause.htm)
 - [Tutorialspoint: GROUP BY - Mengelompokan record berdasarkan kondisi atribut tertentu, operasi berbasis grup](https://www.tutorialspoint.com/mysql/mysql-group-by-clause.htm)
+  
+  Tentukan dahulu insight / pengetahuan agregat yang ingin didapatkan
+  
   - [Tutorialspoint: SUM](https://www.tutorialspoint.com/mysql/mysql_aggregate_functions_sum.htm)
   - [Tutorialspoint: COUNT](https://www.tutorialspoint.com/mysql/mysql_aggregate_functions_count.htm)
   - [Tutorialspoint: AVERAGE](https://www.tutorialspoint.com/mysql/mysql_aggregate_functions_avg.htm)
