@@ -95,6 +95,17 @@ Digunakan banyak oleh profesi BI Analyst, BI Developer, Data Analyst, Data Engin
   - [Tutorialspoint: AVERAGE](https://www.tutorialspoint.com/mysql/mysql_aggregate_functions_avg.htm)
   - [Tutorialspoint: MIN MAX](https://www.tutorialspoint.com/mysql/mysql_aggregate_functions_min.htm)
 - [Tutorialspoint: CASE - Memfilter berdasarkan kasus tertentu](https://www.tutorialspoint.com/mysql/mysql_case_statement.htm)
+- Alias
+  - Nama tabel
+    ```sql
+    SELECT p.kode_kabupaten, p.nama_lengkap FROM penduduk p
+    ORDER BY p.kode_kabupaten DESC, p.nama_lengkap
+    ```
+  - Nama kolom
+    ```sql
+    SELECT nama_lengkap AS nama FROM penduduk
+    ```
+  - Subquery
 
 ### Lain Lain
 - [Tutorialspoint: NULL - Ketiadaan data](https://www.tutorialspoint.com/mysql/mysql-null-values.htm)
