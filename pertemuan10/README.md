@@ -44,7 +44,14 @@ Digunakan banyak oleh profesi Data Architect, Data Engineer, profesi2 lain di ba
     ```
     
   - Menambahkan & Menghapus Index
+    ```sql
+    ALTER TABLE penduduk ADD INDEX nama_lengkap_index (nama_awal, nama_akhir)
+    ```
+
   - Menambahkan & Menghapus Primary Key
+    ```sql
+    ALTER TABLE buah ADD CONSTRAINT BuahPrimaryKey PRIMARY KEY (id)
+    ```
   - Menambahkan & Menghapus Foreign Key
   - Menambahkan & Menghapus Constraint
     
@@ -56,6 +63,10 @@ Umum digunakan di Application Development, OLTP
 Digunakan banyak oleh profesi Data Engineer, Backend Developer, Mobile Developer, IoT Developer
 
 - [Tutorialspoint: INSERT - Menambahkan record baru](https://www.tutorialspoint.com/mysql/mysql-insert-query.htm)
+  - Akan eror ketika
+    - Jumlah kolom pada record yang ditambahkan berbeda dengan jumlah kolom yang didefinisikan
+    - Tipe data dari kolom pada record yang ditambahkan berbeda dengan tipe data dari kolom yang didefinisikan
+
 - [Tutorialspoint: UPDATE - Mengubah record yang ada](https://www.tutorialspoint.com/mysql/mysql-update-query.htm)
 - [Tutorialspoint: DELETE - Menghapus record yang ada](https://www.tutorialspoint.com/mysql/mysql-delete-query.htm)
 
