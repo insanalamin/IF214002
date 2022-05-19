@@ -6,6 +6,25 @@ Umum digunakan semua aplikasi yang menggunakan basis data
 Digunakan banyak oleh profesi Data Architect, Data Engineer, profesi2 lain di bawah
 
 - [Tutorialspoint: CREATE TABLE - Membuat tabel baru](https://www.tutorialspoint.com/mysql/mysql-create-tables.htm)
+  Contoh :
+  
+  ```sql
+  CREATE TABLE binatang (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nama VARCHAR(40) NOT NULL,
+    deskripsi TEXT
+  )
+  ```
+    
+  ```sql
+  CREATE TABLE absensi (
+    tanggal DATE,
+    id_mahasiswa INT,
+    status_kehadiran SMALLINT,
+    PRIMARY KEY (tanggal, id_mahasiswa)
+  )
+  ```
+
 - [Tutorialspoint: DROP TABLE - Menghapus tabel yang ada](https://www.tutorialspoint.com/mysql/mysql-drop-tables.htm)
 - [Tutorialspoint: ALTER TABLE - Mengubah struktur tabel yang ada](https://www.tutorialspoint.com/mysql/mysql_alter_table.htm)
 - [Tutorialspoint: INDEX - Mengoptimasi query dengan mekanisme indexing](https://www.tutorialspoint.com/mysql/mysql-indexes.htm)
