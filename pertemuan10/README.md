@@ -94,6 +94,28 @@ Digunakan banyak oleh profesi BI Analyst, BI Developer, Data Analyst, Data Engin
   Tentukan dahulu insight / pengetahuan agregat yang ingin didapatkan
   
   - [Tutorialspoint: SUM](https://www.tutorialspoint.com/mysql/mysql_aggregate_functions_sum.htm)
+    ```sql
+    SELECT
+      "Jawa Barat" AS provinsi,
+      kode_kabupaten,
+        COUNT(*) AS jumlah_penduduk,
+        (
+          /* Menjumlahkan tiap nilai 1 atau 0 dari tiap record */
+          SUM(
+            /* Untuk tiap record, kalau gendernya M hitung 1 selain itu 0 */
+            CASE WHEN gender="M" THEN 1 ELSE 0 END
+          )
+        ) AS jumlah_penduduk_pria,
+        (
+          /* Menjumlahkan tiap nilai 1 atau 0 dari tiap record */
+          SUM(
+            /* Untuk tiap record, kalau gendernya M hitung 1 selain itu 0 */
+            CASE WHEN gender="F" THEN 1 ELSE 0 END
+          )
+        ) AS jumlah_penduduk_wanita
+    FROM penduduk
+    GROUP BY kode_kabupaten
+    ```
   - [Tutorialspoint: COUNT](https://www.tutorialspoint.com/mysql/mysql_aggregate_functions_count.htm)
   - [Tutorialspoint: AVERAGE](https://www.tutorialspoint.com/mysql/mysql_aggregate_functions_avg.htm)
   - [Tutorialspoint: MIN MAX](https://www.tutorialspoint.com/mysql/mysql_aggregate_functions_min.htm)
