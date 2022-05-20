@@ -136,6 +136,30 @@ Digunakan banyak oleh profesi BI Analyst, BI Developer, Data Analyst, Data Engin
     SELECT nama_lengkap AS nama FROM penduduk
     ```
 - [Tutorialspoint: Subquery](https://www.tutorialspoint.com/Subquery-in-SQL)
+  ```sql
+  SELECT tb.kode_kabupaten, tb.jumlah_penduduk FROM (
+    SELECT
+        "Jawa Barat" AS provinsi,
+        kode_kabupaten,
+        COUNT(*) AS jumlah_penduduk,
+        (
+          /* Menjumlahkan tiap nilai 1 atau 0 dari tiap record */
+          SUM(
+            /* Untuk tiap record, kalau gendernya M hitung 1 selain itu 0 */
+            CASE WHEN gender="M" THEN 1 ELSE 0 END
+          )
+        ) AS jumlah_penduduk_pria,
+        (
+          /* Menjumlahkan tiap nilai 1 atau 0 dari tiap record */
+          SUM(
+            /* Untuk tiap record, kalau gendernya M hitung 1 selain itu 0 */
+            CASE WHEN gender="F" THEN 1 ELSE 0 END
+          )
+        ) AS jumlah_penduduk_wanita
+    FROM penduduk
+    GROUP BY kode_kabupaten
+  ) AS tb
+  ```
 
 ### Lain Lain
 - [Tutorialspoint: NULL - Ketiadaan data](https://www.tutorialspoint.com/mysql/mysql-null-values.htm)
