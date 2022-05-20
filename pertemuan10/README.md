@@ -122,6 +122,17 @@ Digunakan banyak oleh profesi BI Analyst, BI Developer, Data Analyst, Data Engin
 - [Tutorialspoint: CASE - Memfilter berdasarkan kasus tertentu](https://www.tutorialspoint.com/mysql/mysql_case_statement.htm)
 - [Tutorialspoint: JOIN - Menggabungkan lebih dari satu tabel dengan kondisi tertentu](https://www.tutorialspoint.com/mysql/mysql-using-joins.htm)
   - INNER
+    ```sql
+    /* nama penduduk dan nama kabupaten nya + umur */
+    select
+      p.nama_lengkap,
+        p.kode_kabupaten,
+        kk.deskripsi AS kabupaten,
+        p.tanggal_lahir
+    FROM penduduk p
+    INNER JOIN kode_kabupaten kk 
+    ON p.kode_kabupaten = kk.kode
+    ```
   - OUTER
   - LEFT
   - RIGHT
