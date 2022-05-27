@@ -18,3 +18,38 @@ VALUES
 ('14', 'koor inovasi', 'kontemplasi'), 
 ('15', 'anggota', 'menyelinap'),
 ('16', 'anggota', 'komunikasi');
+
+SELECT * FROM mahasiswa;
+SELECT * FROM anggota_himpunan;
+
+/* INNER JOIN */
+SELECT 
+	m.nim,
+    m.nama,
+    a.jabatan,
+    a.skill_utama
+FROM mahasiswa m
+INNER JOIN anggota_himpunan a 
+ON m.nim = a.nim;
+
+
+/* LEFT JOIN */
+SELECT 
+	m.nim,
+    m.nama,
+    a.jabatan,
+    a.skill_utama
+FROM mahasiswa m
+LEFT JOIN anggota_himpunan a 
+ON m.nim = a.nim;
+
+/* RIGHT JOIN */
+SELECT 
+	m.nim,
+    a.nim as nim_himpunan,
+    m.nama,
+    a.jabatan,
+    a.skill_utama
+FROM mahasiswa m
+RIGHT JOIN anggota_himpunan a 
+ON m.nim = a.nim;
