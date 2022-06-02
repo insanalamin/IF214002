@@ -56,7 +56,7 @@ VALUES
 
 ```
 
-**Transaction**
+**Transaction - Menambahkan Karyawan Baru Dengan Gaji Sama Dengan Gaji Tertinggi**
 ```sql
 START TRANSACTION;
 
