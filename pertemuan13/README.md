@@ -15,6 +15,9 @@
   - Durability
 
 ## Definisi
+- rangkaian lebih dari satu perintah database
+- dihitung sebagai satu unit proses kerja pada database
+- memenuhi sifat ACID
 
 ## Alur Kerja
 
