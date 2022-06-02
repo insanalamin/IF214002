@@ -18,6 +18,10 @@
 - rangkaian lebih dari satu perintah database
 - yang dihitung sebagai satu unit proses kerja
 - memenuhi sifat ACID
+  - atomic : seluruh perintah berhasil, atau tidak sama sekali
+  - consistency : 
+  - isolation :
+  - durability : 
 
 ## Alur Kerja
 
@@ -30,6 +34,7 @@
 ## Materi Terkait
 - [Tutorialspoint - DBMS - Transaction](https://www.tutorialspoint.com/dbms/dbms_transaction.htm)
 - [W3schools - DBMS - Transaction](https://www.w3schools.in/dbms/transaction)
+- [ACID Explained: Atomic, Consistent, Isolated & Durable](https://www.bmc.com/blogs/acid-atomic-consistent-isolated-durable/)
 - [Transaction Management in DBMS: What are ACID Properties?](https://www.guru99.com/dbms-transaction-management.html)
 - [Mengenal Konsep Database Transaction — Bagian 1](https://medium.com/gits-apps-insight/mengenal-konsep-database-transaction-bagian-1-54e66789f75e)
 - [MySQL Beginner Course: Chapter 10 - Transactions](https://www.youtube.com/watch?v=WO_VNMUuGoU)
