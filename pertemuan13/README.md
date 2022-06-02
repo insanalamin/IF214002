@@ -16,7 +16,7 @@
 
 ## Definisi
 - rangkaian lebih dari satu perintah database
-- dihitung sebagai satu unit proses kerja pada database
+- yang dihitung sebagai satu unit proses kerja
 - memenuhi sifat ACID
 
 ## Alur Kerja
