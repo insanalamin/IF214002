@@ -19,9 +19,9 @@
 - yang dihitung sebagai satu unit proses kerja
 - memenuhi sifat ACID
   - atomic : seluruh perintah berhasil, atau tidak sama sekali
-  - consistency : 
-  - isolation :
-  - durability : 
+  - consistency : transaksi tidak mengganggu integritas data di database
+  - isolation : pemisahan urutan eksekusi antar transaksi yang berjalan hampir bersamaan
+  - durability : jika seluruh operasi transaksi telah berhasil, data tersimpan permanen di disk
 
 ## Alur Kerja
 
