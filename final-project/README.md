@@ -12,6 +12,8 @@
   - Dart
   - Python [installer](https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe)
   - PHP
+    - [Contoh file web service php](https://github.com/insanalamin/IF214002/blob/main/final-project/contoh-webservice.php)
+    - php -S localhost:8123 contoh-webservice.php
   - Go
   - Rust
   - Ruby
@@ -22,6 +24,7 @@
   - Web: React JS / TS - Javascript / Typescript
   - Web: HTML Javascript
     - [HTML5 boilerplate](https://www.sitepoint.com/a-basic-html5-template/)
+    - [Contoh visualisasi data ChartJS](https://github.com/insanalamin/IF214002/blob/main/final-project/contoh-visualisasi-chartjs.html)
   - Web: Vue JS
 - Visualisasi data
   - Ngikut frontend
