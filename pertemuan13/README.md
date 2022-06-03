@@ -68,6 +68,33 @@ VALUES (11, 'Sulingkro', 23, 'Sumedang', @gajitertinggi);
 COMMIT;
 ```
 
+```sql
+START TRANSACTION;
+
+INSERT INTO pembelian VALUES(1, 0);
+
+INSERt INTO item_pembalian VALUES(1, 1, 400, 2);
+INSERt INTO item_pembalian VALUES(2, 4, 600, 1);
+
+SELECT @total_harga:= SUM(harga_satuan * jumlah) FROM item_pembalian;
+
+UPDATE pembelian SET total_harga=@total_harga;
+
+COMMIT;
+
+CREATE TABLE pembelian (
+	id int,
+  	total_harga int
+);
+
+CREATE table item_pembalian (
+	id_pembelian INT,
+  	id_item INT,
+  	harga_satuan,
+  	jumlah INT
+);
+```
+
 [Data contoh untuk transaction](https://github.com/insanalamin/IF214002/tree/main/pertemuan13/transaction-ddl.sql)
 
 ## Materi Terkait
