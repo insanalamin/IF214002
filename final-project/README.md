@@ -21,6 +21,7 @@
   - Mobile: Ionic - Javascript
   - Web: React JS / TS - Javascript / Typescript
   - Web: HTML Javascript
+    - [HTML5 boilerplate](https://www.sitepoint.com/a-basic-html5-template/)
   - Web: Vue JS
 - Visualisasi data
   - Ngikut frontend
@@ -30,3 +31,4 @@
   - Windows
     cd : pindah direktori
     mkdir : buat direktori
+    dir : melihat isi direktori
