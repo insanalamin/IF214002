@@ -4,6 +4,9 @@
   $passwordBasisData = "";
   $namaBasisData = "project";
 	
+  header("Access-Control-Allow-Origin: *");
+  header("Access-Control-Allow-Credentials: true");
+  header('Access-Control-Allow-Methods: GET, POST, OPTIONS, DELETE, PUT');
   header('Content-Type: application/json; charset=utf-8');
 	
   function ambilSemuaDataPenduduk($alamatServer, $userBasisData, $passwordBasisData, $namaBasisData) {
