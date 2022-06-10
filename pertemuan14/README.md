@@ -40,5 +40,6 @@
 
 ## Tugas Praktikum
 Selesaikan:
+- Data dummy
 - Web service untuk visualisasi data
 - GUI untuk visualisasi data (chart / diagram)
