@@ -1,3 +1,10 @@
+## Contoh File
+- [visualization.html](https://github.com/insanalamin/IF214002/blob/main/pertemuan14/visualization.html) - Visualisasi dengan chart.js
+- [webservice.php](https://github.com/insanalamin/IF214002/blob/main/pertemuan14/webservice.php) - Web service sederhana dengan PHP
+  ```sh
+  php -S localhost:3123 webservice.php
+  ```
+
 ## Catatan
 - Masalah prioritas / critical itu yang terkait dengan proses utama bisnis, bisa dicari dari faktor paling mengancam / paling melonjakkan keberlangsungan bisnis
 - Di pemerintahan, faktor paling mengancam keberlangsungan bisnis itu bisa:
