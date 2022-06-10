@@ -7,7 +7,7 @@
   - Membahayakan nyawa karyawan
   - Membuat konsumen tidak beli lagi x Membuat konsumen ingin beli banyak
 
-## Tugas
+## Tugas Teori
 1. Sebagai pemimpin organisasi / perusahaan, dari data hasil aplikasi yang sudah dibuat, tentukan masalah-masalah prioritas untuk dicari solusinya !
   - Ingin tahu perkembangan jumlah kencleng per minggunya
   - Ingin tahu trend jumlah zat kimia berbahaya di sungai (bertambah, berkurang) per bulan
@@ -37,3 +37,8 @@
       - Data : provinsi, bulan, tahun, total pemesanan 
 
 3. Buat query SQL untuk mendapatkan data no. 2 tersebut !
+
+## Tugas Praktikum
+Selesaikan:
+- Web service untuk visualisasi data
+- GUI untuk visualisasi data (chart / diagram)
