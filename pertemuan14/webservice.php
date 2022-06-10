@@ -9,6 +9,8 @@
   header('Access-Control-Allow-Methods: GET, POST, OPTIONS, DELETE, PUT');
   header('Content-Type: application/json; charset=utf-8');
 	
+  $request = $_SERVER['REQUEST_URI'];
+  
   function ambilSemuaDataPenduduk($alamatServer, $userBasisData, $passwordBasisData, $namaBasisData) {
     try {
 			
@@ -37,5 +39,16 @@
     }
   }
 	
-  ambilSemuaDataPenduduk($alamatServer, $userBasisData, $passwordBasisData, $namaBasisData);
+  switch ($request) {
+    case '/penduduk':
+      ambilSemuaDataPenduduk($alamatServer, $userBasisData, $passwordBasisData, $namaBasisData);
+      break;
+    default:
+      $output = new stdClass();
+      $output->pesan = "Ini respon default";
+      
+      echo json_encode($output);
+  }
+  
+  
 ?>
