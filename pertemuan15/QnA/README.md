@@ -25,8 +25,16 @@
   - Linux path: "/usr/bin;/home/Rifky/aplikasi/game"
 
 ## 3 Port. listening to port vs without port. port as communication channel
+- Jalur untuk komunikasi layanan berupa nomer dari 1 - 65 ribuan
+- Bisa untuk lintas komputer / server
+- Secara default, port itu ga dipake. Contoh port 9999, selama ga ada program yang dengerin port itu untuk nangkep dan kirim komunikasi, ya port itu ga kepake
+- Kalo port 9999 udah dipake untuk misal, Executable PESEN BAJIGUR, Executable lain ga bisa ikut nangkring di port itu
+- Kalo alamat executable bisa pindah2 dan hanya bisa diakses oleh satu server. Kalo port, bisa diakses dari server lainnya, memudahkan pengenalan alamat, contoh 3306 umum dipake untuk layanan MySQL
+  - Pake program via Executable vs via Port
+    - C:/program/rafi_multi_converter.exe D:/daftar_gaji.csv E:/daftar_gaji.json
+    - Dari komputernya Rizal yg kekonteksi via wifi dengan komputer Rafi, rizal request POST ke http://IP_RAFI:**8765**/csv_to_json ngirim file D:/daftar_gaji.csv
 
-- client - server terminology
+## 4 Client - server terminology
 - web server, executable fasilitator permintaan data dari client
 - protokol komunikasi HTTP. http client vs http server
 - cara interaksi http client
