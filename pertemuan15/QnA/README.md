@@ -34,11 +34,41 @@
     - C:/program/rafi_multi_converter.exe D:/daftar_gaji.csv E:/daftar_gaji.json
     - Dari komputernya Rizal yg kekonteksi via wifi dengan komputer Rafi, rizal request POST ke http://IP_RAFI:**8765**/csv_to_json ngirim file D:/daftar_gaji.csv
 
-## 4 Client - server terminology
-- web server, executable fasilitator permintaan data dari client
-- protokol komunikasi HTTP. http client vs http server
-- cara interaksi http client
-- apa itu client app ? Web, mobile, desktop, IoT ? Cara instalasinya gimana aja ?
+## 4 Client - Server terminology
+- Client itu komputer yang minta data ke Server
+- Server itu komputer yang nyediain data sesuai permintaan Client
+- Client dan Server umumnya ada di alamat jaringan yang berbeda
+  - Server facebook, diakses oleh milyaran aplikasi client di web ataupun mobile
+  - Server gojek, diakses oleh jutaan pengguna aplikasi client Gojek
+    - Norma pake aplikasi client Gojek a.k.a Gojek for Android, untuk minta jemput dari BIP ke Stasiun Kereta Gantung Lembang, request dikirim ke Server Gojek via protokol HTTP POST 
+- Bisa juga di alamat jaringan yang sama atau misalnya di satu komputer
+  - Romi develop web service Python di laptop Romi, yang request ke database PostgreSQL di port 5432 di laptop Romi
+- Aplikasi Client ini bisa berupa smartphone, Laptop, komputer kantor, server lain, device IoT
+- Aplikasi Server bisa eksplor segala hal yang ada di servernya demi menyediakan data yang diminta
+  - Minta data dari database
+  - Hapus data dari folder tertentu
+  - Ambil statistik kinerja server buat dikirim ke client
+  - Menginstall program di server (banyak dipake di cloud service)
+
+## 5 Web server, executable fasilitator permintaan data dari client
+- Executable / program yang memfasilitasi permintaan data dari client
+- Protokol komunikasinya bisa macem2, yang paling umum HTTP
+
+## 6 Protokol komunikasi HTTP. http client vs http server
+- Salah satu format komunikasi client server
+- Ketika client minta sesuatu ke server, istilahnya HTTP REQUEST, punya format sendiri.
+  Method umum yang digunakan GET, POST, PUT, DELETE
+  - Contoh GET : Tiap hari kita gunakan tiap buka informasi dari aplikasi berbasis web
+    - Buka IG postingan terbaru, Googling
+  - Contoh POST : Tiap kita posting status di IG, Facebook, Whatsapp
+
+## 7 Cara interaksi Client ke Server dengan HTTP REQUEST
+- Bisa via terminal, curl <PROTOKOL> <ALAMAT_WEB>/<PATH> <DATA> : curl POST google.com/search "masakan yang tidak sedap tapi menyehatkan"
+- Bisa via aplikasi yang udah jadi dibuat orang lain : Minta jemput driver via Gojek
+  - HTTP REQUEST nya udah ada di dalem aplikasi Gojek
+- Bisa via library / function di bahasa pemrograman, ketika kita mau bikin aplikasi yang bisa melakukan HTTP REQUEST, javascript, php, go, rust, python, r, dsb.
+
+## Apa itu client app ? Web, mobile, desktop, IoT ? Cara instalasinya gimana aja ?
 - Apa itu web page, web app ? executable kah, atau format data untuk dibaca dan dijalankan browser kah ? bolehkah web page / app tidak merequest data lagi ke server ? apakah web page / app memiliki data ? Dengan apa web app ditulis ?
 - apa itu mobile app ? dimana mobile app berada ? apa kesamaan mobile app dengan web app, desktop app ?
 - apa itu web service ? 
