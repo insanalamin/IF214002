@@ -35,9 +35,30 @@
     <div class="container" id="content">
       <div class="row">
         <div class="col-sm-12">
-          Tabel
+          List Penduduk
+        </div>
+        <div id="list-penduduk">
+          
         </div>
       </div>
     </div>
+    <script>
+      axios.get('http://localhost:8000/api/index.php/penduduk')
+        .then(function (response){
+          console.log(response.data);
+          
+          let listPenduduk = document.getElementById("list-penduduk");
+          
+          let listPendudukHTMLString = "<ul>";
+          
+          response.data["data"].forEach(item => {
+            listPendudukHTMLString += "<li>" + item["nama"] + " - " + item["alamat"] + "</li>";
+          })
+          
+          listPendudukHTMLString += "</ul>";
+          
+          listPenduduk.innerHTML = listPendudukHTMLString;
+        });
+    </script>
   </body>
 </html>
