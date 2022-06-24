@@ -44,14 +44,16 @@
     </div>
     <script>
       axios.get('http://localhost:8000/api/index.php/penduduk')
-        .then(function (response){
-          console.log(response.data);
+        .then(function (dataDariAPINihGuys){
+          console.log(dataDariAPINihGuys.data["data"]);
+          
+          // Update chart
           
           let listPenduduk = document.getElementById("list-penduduk");
           
           let listPendudukHTMLString = "<ul>";
           
-          response.data["data"].forEach(item => {
+          dataDariAPINihGuys.data["data"].forEach(item => {
             listPendudukHTMLString += "<li>" + item["nama"] + " - " + item["alamat"] + "</li>";
           })
           
