@@ -1,33 +1,106 @@
 <?php
 
-// https://stackoverflow.com/questions/11722711/url-routing-regex-php
+// https://steampixel.de/simple-and-elegant-url-routing-with-php/
 
-class Router{
+class Route{
 
-  private $routes = [];
+  private static $routes = Array();
+  private static $pathNotFound = null;
+  private static $methodNotAllowed = null;
 
-  public function addRoute($method, $url, $callback){
-    $this->routes[] = ['method' => $method, 'url' => $url, 'callback' => $callback];
+  public static function add($expression, $function, $method = 'get'){
+    array_push(self::$routes,Array(
+      'expression' => $expression,
+      'function' => $function,
+      'method' => $method
+    ));
   }
 
-  public function doRouting(){
-    // I used PATH_INFO instead of REQUEST_URI, because the 
-    // application may not be in the root direcory
-    // and we dont want stuff like ?var=value
-    $reqUrl = $_SERVER['PATH_INFO'];
-    $reqMet = $_SERVER['REQUEST_METHOD'];
+  public static function pathNotFound($function){
+    self::$pathNotFound = $function;
+  }
 
-    foreach($this->routes as  $route) {
-      // convert urls like '/users/:uid/posts/:pid' to regular expression
-      $pattern = "@^" . preg_replace('/\\\:[a-zA-Z0-9\_\-]+/', '([a-zA-Z0-9\-\_]+)', preg_quote($route['url'])) . "$@D";
-      $matches = Array();
-      // check if the current request matches the expression
-      if($reqMet == $route['method'] && preg_match($pattern, $reqUrl, $matches)) {
-          // remove the first match
-          array_shift($matches);
-          // call the callback with the matched positions as params
-          return call_user_func_array($route['callback'], $matches);
+  public static function methodNotAllowed($function){
+    self::$methodNotAllowed = $function;
+  }
+
+  public static function run($basepath = '/'){
+
+    // Parse current url
+    $parsed_url = parse_url($_SERVER['REQUEST_URI']);//Parse Uri
+
+    if(isset($parsed_url['path'])){
+      $path = $parsed_url['path'];
+    }else{
+      $path = '/';
+    }
+
+    // Get current request method
+    $method = $_SERVER['REQUEST_METHOD'];
+
+    $path_match_found = false;
+
+    $route_match_found = false;
+
+    foreach(self::$routes as $route){
+
+      // If the method matches check the path
+
+      // Add basepath to matching string
+      if($basepath!=''&&$basepath!='/'){
+        $route['expression'] = '('.$basepath.')'.$route['expression'];
+      }
+
+      // Add 'find string start' automatically
+      $route['expression'] = '^'.$route['expression'];
+
+      // Add 'find string end' automatically
+      $route['expression'] = $route['expression'].'$';
+
+      // echo $route['expression'].'<br/>';
+
+      // Check path match	
+      if(preg_match('#'.$route['expression'].'#',$path,$matches)){
+
+        $path_match_found = true;
+
+        // Check method match
+        if(strtolower($method) == strtolower($route['method'])){
+
+          array_shift($matches);// Always remove first element. This contains the whole string
+
+          if($basepath!=''&&$basepath!='/'){
+            array_shift($matches);// Remove basepath
+          }
+
+          call_user_func_array($route['function'], $matches);
+
+          $route_match_found = true;
+
+          // Do not check other routes
+          break;
+        }
       }
     }
+
+    // No matching route was found
+    if(!$route_match_found){
+
+      // But a matching path exists
+      if($path_match_found){
+        header("HTTP/1.0 405 Method Not Allowed");
+        if(self::$methodNotAllowed){
+          call_user_func_array(self::$methodNotAllowed, Array($path,$method));
+        }
+      }else{
+        header("HTTP/1.0 404 Not Found");
+        if(self::$pathNotFound){
+          call_user_func_array(self::$pathNotFound, Array($path));
+        }
+      }
+
+    }
+
   }
-};
+
+}
