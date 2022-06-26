@@ -11,6 +11,7 @@ header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Credentials: true");
 header('Access-Control-Allow-Methods: GET, POST, OPTIONS, DELETE, PUT');
 header('Content-Type: application/json; charset=utf-8');
+header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method,Access-Control-Request-Headers, Authorization");
 
 // OPERASIONAL
 // Tambah Penduduk
@@ -35,4 +36,6 @@ Route::add('/api/index.php/bi/penduduk/distribusi-usia', function($nik) {getBIPe
 // Bulan tahun terbanyak lahir - Grafik kalender
 Route::add('/api/index.php/bi/penduduk/bulan-tahun-lahir', function($nik) {getBIPendudukBulanTahunLahir($nik);}, 'get');
 
+
+Route::add('/api/index.php/(.*)', function() {}, 'options');
 Route::run('/');
