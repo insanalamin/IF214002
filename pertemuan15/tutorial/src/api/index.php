@@ -10,20 +10,23 @@ header("Access-Control-Allow-Credentials: true");
 header('Access-Control-Allow-Methods: GET, POST, OPTIONS, DELETE, PUT');
 header('Content-Type: application/json; charset=utf-8');
 
-$method = $_SERVER['REQUEST_METHOD'];
+// OPERASIONAL
+// Tambah Penduduk
+// Hapus Penduduk
+// Lihat semua Penduduk
+// Lihat Penduduk berdasarkan NIK
 
-Route::add('/api/index.php/penduduk', function() {
-  getAllPenduduk();
-}, 'get');
+Route::add('/api/index.php/penduduk', function() {getAllPenduduk();}, 'get');
 
-Route::add('/api/index.php/penduduk', function() {
-  // POST content: $_POST
-  // JSON POST content: file_get_contents('php://input')
-  postPenduduk();
-}, 'post');
+// POST content: $_POST
+// JSON POST content: file_get_contents('php://input')
+Route::add('/api/index.php/penduduk', function() {postPenduduk();}, 'post');
 
-Route::add('/api/index.php/penduduk/([0-9]{16})', function($nik) {
-  getPendudukByNIK("5445");
-}, 'get');
+Route::add('/api/index.php/penduduk/([0-9]{16})', function($nik) {getPendudukByNIK($nik);}, 'get');
+
+// BUSINESS INTELLIGENCE
+// Jumlah Penduduk per kabupaten - Grafik batang 
+// Jumlah Penduduk per rentang usia - Grafik batang
+// Bulan tahun terbanyak lahir - Grafik kalender
 
 Route::run('/');
