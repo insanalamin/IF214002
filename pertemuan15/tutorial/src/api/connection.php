@@ -1,8 +1,14 @@
 <?php
 
-$servername = "localhost";
+$host = "localhost";
+$port = 3366;
+$dbname = "penduduk";
 $username = "root";
-$password = "root";
-$dbname = "podcast";
-// $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-// $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$password = "iguana";
+
+global $dbConnection;
+
+$dbConnection = new PDO("mysql:host=$host:$port;dbname=$dbname", $username, $password, array(
+  PDO::ATTR_PERSISTENT => true
+));
+$dbConnection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

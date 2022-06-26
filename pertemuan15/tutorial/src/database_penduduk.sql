@@ -1,3 +1,5 @@
+CREATE DATABASE `penduduk` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+
 CREATE TABLE ref_ijazah_terakhir (
   id INT NOT NULL PRIMARY KEY,
   deskripsi VARCHAR(40) NOT NULL 
@@ -11,7 +13,7 @@ VALUES
 (4, 'D1'),
 (5, 'D2'),
 (6, 'D3'),
-(7 'D4/S1'),
+(7, 'D4/S1'),
 (8, 'S2'),
 (9, 'S3')
 ;
@@ -27,7 +29,7 @@ VALUES
 (2, 'Perkebunan'),
 (3, 'Perikanan tangkap'),
 (4, 'Perikanan budidaya'),
-(5 'Kehutanan'),
+(5, 'Kehutanan'),
 (6, 'Konstruksi dan bangunan'),
 (7, 'BUMN'),
 (8, 'PNS'),
@@ -56,7 +58,7 @@ VALUES
 (2, '500.000 - 1.000.000'),
 (3, '1.000.001 - 2.000.000'),
 (4, '2.000.001 - 3.000.000'),
-(5 '3.000.001 - 5.000.000'),
+(5, '3.000.001 - 5.000.000'),
 (6, '5.000.001 - 8.000.000'),
 (7, '8.000.001 - 15.000.000'),
 (8, '15.000.001 - 30.000.000'),

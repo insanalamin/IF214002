@@ -1,6 +1,7 @@
 <?php
 
-require_once ($_SERVER['DOCUMENT_ROOT']."/api/connection.php");
+// POST content: $_POST
+// JSON POST content: file_get_contents('php://input')
 
 function postPenduduk(){
   $output = new stdClass();

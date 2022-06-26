@@ -2,6 +2,7 @@
 
 // https://steampixel.de/simple-and-elegant-url-routing-with-php/
 
+
 class Route{
 
   private static $routes = Array();
