@@ -2,8 +2,11 @@
 
 ## Requirements
 
-- MySQL
-- PHP
+### MySQL
+- [Windows Installer](https://dev.mysql.com/downloads/installer/) 
+- [Linux Installer]() 
+
+### PHP
 
 ## Run
 
