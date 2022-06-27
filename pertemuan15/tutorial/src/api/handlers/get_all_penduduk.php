@@ -9,7 +9,7 @@ function getAllPenduduk(){
   $sqlStatement->execute();
 
   $output = new stdClass();
-  $output->data = $sqlStatement->fetchall();
+  $output->data = $sqlStatement->fetchall(PDO::FETCH_ASSOC);
   $output->params = $params;
 
   echo json_encode($output);

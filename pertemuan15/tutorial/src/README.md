@@ -7,7 +7,7 @@
 - [Linux Installer](https://dev.mysql.com/doc/refman/8.0/en/linux-installation.html) 
 - [Docker Installer](https://hub.docker.com/_/mysql)
   ```sh
-  docker run --name mysql-penduduk -p 3366:3306 -e MYSQL_ROOT_PASSWORD=iguana -d mysql:latest
+  docker run --name mysql-penduduk -p 3306:3306 -e MYSQL_ROOT_PASSWORD=iguana -d mysql:latest
   ```
 - [Bundle PHP interpreter, MySQL database, Apache web server, PHPMyAdmin web app, dkk.](https://www.apachefriends.org/download.html)
 - [Dbeaver untuk eksplorasi database](https://dbeaver.io/)

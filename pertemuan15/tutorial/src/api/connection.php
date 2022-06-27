@@ -1,7 +1,7 @@
 <?php
 
 $host = "localhost";
-$port = 3366;
+$port = 3306;
 $dbname = "penduduk";
 $username = "root";
 $password = "iguana";
