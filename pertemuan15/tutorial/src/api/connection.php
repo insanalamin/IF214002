@@ -4,7 +4,7 @@ $host = "localhost";
 $port = 3306;
 $dbname = "penduduk";
 $username = "root";
-$password = "iguana";
+$password = "";
 
 global $dbConnection;
 

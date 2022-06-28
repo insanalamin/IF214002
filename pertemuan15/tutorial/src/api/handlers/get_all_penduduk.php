@@ -3,9 +3,17 @@
 function getAllPenduduk(){
   global $dbConnection;
 
-  $params = $_SERVER['QUERY_STRING'];
+  if(isset($params)) {
+    $params = $_SERVER['QUERY_STRING'];
+  } else {
+    $params = false;
+  }
 
-  $sqlStatement = $dbConnection->prepare("SELECT id, nama_lengkap, kode_kabupaten FROM penduduk");
+
+  $sqlStatement = $dbConnection->prepare("
+    SELECT p.id, p.nama_lengkap, kk.deskripsi as kabupaten FROM penduduk p
+    INNER JOIN kode_kabupaten kk ON p.kode_kabupaten = kk.kode 
+  ");
   $sqlStatement->execute();
 
   $output = new stdClass();
