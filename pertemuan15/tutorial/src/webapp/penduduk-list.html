@@ -65,16 +65,16 @@
                 </select>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-4">
-                <input type="text" class="form-control" placeholder="Nomor HP">
+                <input type="text" class="form-control" id="input-nomor-hp" placeholder="Nomor HP">
               </div>
               <div class="col-sm-12 col-md-6 col-lg-4">
-                Gender <input class="form-check-input" type="radio" name="flexRadioDefault"> Pria <input class="form-check-input" type="radio" name="flexRadioDefault"> Wanita
+                Gender <input class="form-check-input" value="M" type="radio" name="input-gender"> Pria <input class="form-check-input" type="radio" value="F" name="input-gender"> Wanita
               </div>
               <div class="col-sm-12 col-md-6 col-lg-4">
-                <input type="date" class="form-control" placeholder="Tanggal lahir">
+                <input id="input-tanggal-lahir" type="date" class="form-control" placeholder="Tanggal lahir">
               </div>
               <div class="col-sm-12 col-md-6 col-lg-4">
-                <select class="form-select">
+                <select class="form-select" id="input-ijazah-terakhir">
                   <option selected>Pilih Ijazah Terakhir</option>
                   <option value="0">Tidak Sekolah</option>
                   <option value="1">SD/MI</option>
@@ -89,7 +89,7 @@
                 </select>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-4">
-                <select class="form-select">
+                <select class="form-select" id="input-pekerjaan">
                   <option selected>Pilih Pekerjaan</option>
                   <option value="0">Tidak bekerja</option>
                   <option value="1">Pertanian</option>
@@ -97,7 +97,7 @@
                 </select>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-4">
-                <select class="form-select">
+                <select class="form-select" id="input-penghasilan-bulanan">
                   <option selected>Pilih Rentang Penghasilan</option>
                   <option value="0">Tidak memiliki penghasilan</option>
                   <option value="1">< Rp 500.000</option>
@@ -135,6 +135,27 @@
 
     </div>
     <script>
+      function tambahPenduduk() {
+        const isianData = {};
+        isianData.nama_lengkap = document.getElementById('input-nama-lengkap').value; 
+        isianData.kode_kabupaten = parseInt(document.getElementById('input-kode-kabupaten').value); 
+        isianData.nomor_hp = document.getElementById('input-nomor-hp').value;
+        isianData.gender = document.querySelector('input[name="input-gender"]:checked').value;
+        isianData.tanggal_lahir = document.getElementById('input-tanggal-lahir').value;
+        isianData.ijazah_terakhir = parseInt(document.getElementById('input-ijazah-terakhir').value);
+        isianData.pekerjaan = parseInt(document.getElementById('input-pekerjaan').value);
+        isianData.penghasilan_bulanan = parseInt(document.getElementById('input-penghasilan-bulanan').value);
+
+        const alamatWebService = `http://localhost:8000/api/index.php/penduduk`;
+        axios.post(alamatWebService, isianData)
+          .then(function (dataDariWebServiceNihGuys){
+            console.log(dataDariWebServiceNihGuys.data["data"]);
+            alert(`Data ${isianData.nama_lengkap} berhasil ditambahkan`);
+            tampilkanSemuaPenduduk();
+          })
+        console.log(isianData);
+      }
+
       function hapusPenduduk(idPenduduk, namaPenduduk) {
         console.log("hapus penduduk");
         const alamatWebService = `http://localhost:8000/api/index.php/penduduk/${idPenduduk}`;
