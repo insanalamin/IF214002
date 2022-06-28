@@ -13,6 +13,7 @@ function getAllPenduduk(){
   $sqlStatement = $dbConnection->prepare("
     SELECT p.id, p.nama_lengkap, kk.deskripsi as kabupaten FROM penduduk p
     INNER JOIN kode_kabupaten kk ON p.kode_kabupaten = kk.kode 
+    ORDER BY p.id DESC
   ");
   $sqlStatement->execute();
 
