@@ -1,4 +1,5 @@
-CREATE DATABASE `penduduk` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+CREATE DATABASE penduduk /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE penduduk;
 
 CREATE TABLE ref_ijazah_terakhir (
   id INT NOT NULL PRIMARY KEY,
